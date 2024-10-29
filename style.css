@@ -17,6 +17,39 @@ body {
     background-position: center;
   }
   
+  /* Media query para pantallas pequeñas (e.g., smartphones) */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas */
+    .container {
+      width: 90vw; /* Contenedor ocupa el 90% del ancho de la pantalla */
+    }
+    .logo {
+      width: 30%; /* Logo ocupa el 30% del ancho de la pantalla */
+    }
+  }
+  
+  /* Media query para pantallas medianas (e.g., tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Ajustes para pantallas medianas */
+    .container {
+      width: 80vw;
+    }
+    .logo {
+      width: 25%;
+    }
+  }
+  
+  /* Media query para pantallas grandes (e.g., desktops) */
+  @media (min-width: 1025px) {
+    /* Ajustes para pantallas grandes */
+    .container {
+      width: 70vw;
+    }
+    .logo {
+      width: 20%;
+    }
+  }
+
   header {
     position: relative;
     
@@ -25,9 +58,9 @@ body {
   #logo {
     position: absolute;
     top: 50%;  /* Center logo vertically */
-    left: 50%;  /* Center logo horizontally */
-    transform: translate(-50%, 70%); /* Combine centering with offset */
-    width: 20%;  /* Use viewport width (vw) for responsive sizing */
+    left: 30%;  /* Center logo horizontally */
+    transform: translate(-50%, 100%); /* Combine centering with offset */
+    width: 90%;  /* Use viewport width (vw) for responsive sizing */
     height: auto;  /* Maintain aspect ratio */
     filter: invert(0); /* Invert logo color */
   }
