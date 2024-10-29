@@ -24,11 +24,11 @@ body {
   
   #logo {
     position: absolute;
-    top: 60%;
+    top: 70%;
     transform: translateY(-50%); /* Center logo vertically */
     left: 50%;
     transform: translateX(-50%); /* Center logo horizontally */
-    margin-top: 40px;
+    margin-top: 60px;
   }
   
   header #logo img{
