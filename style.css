@@ -32,7 +32,7 @@ body {
   }
   
   header #logo img{
-    height: 9vh; 
+    height: 8vh; 
     filter: invert(1);  /*invierto el color de mi png*/
 }
 
