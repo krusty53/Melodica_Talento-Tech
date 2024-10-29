@@ -24,11 +24,18 @@ body {
   
   #logo {
     position: absolute;
-    top: 60%;
-    transform: translateY(-50%); /* Center logo vertically */
-    left: 50%;
-    transform: translateX(-50%); /* Center logo horizontally */
-    margin-top: 40px;
+    top: 50%;  /* Center logo vertically */
+    left: 50%;  /* Center logo horizontally */
+    transform: translate(-50%, 70%); /* Combine centering with offset */
+    width: 20%;  /* Use viewport width (vw) for responsive sizing */
+    height: auto;  /* Maintain aspect ratio */
+    filter: invert(0); /* Invert logo color */
+  }
+  
+  @media (max-width: 768px) {
+    #logo {
+      width: 30%; /* Aumenta el tamaño del logo para pantallas más pequeñas */
+    }
   }
   
   header #logo img{
