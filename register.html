@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_register.css">
+
+
+</head>
+<body>
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+            <button class="botons"  onclick="register()">To Register</button>
+            <button class="cancell" onclick="cancelarRegistro()">Cancell</button>
+    </section>
+        
+    <script>
+        function cancelarRegistro() {
+            window.location.href = "login.html";
+        }
+    </script>
+    <script>
+        function register() {
+            window.location.href = "exitoso.html";
+        }
+    </script>
+</body>
+</html>
