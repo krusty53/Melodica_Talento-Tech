@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body {
+    min-height: 100vh; /* Ensures the body fills the viewport height */
+    display: flex; /* Makes body a flex container for stacking elements */
+    flex-direction: column; /* Stacks elements vertically */
+    background: url('img/bg_registro.jpg') no-repeat center center fixed; /* Set background on body */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+  }
+  
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.login_box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+        
+}
+
+h2{
+    font-size: 2em;
+    color: #F5E014;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #F2CD49;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.register {
+    width: 50%;
+    height: 30px;
+    background: #F2CD49;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    margin-left: 45px; 
+    margin-bottom: 10px;
+    margin-left: 85px;  
+}
+
+.register:hover{
+    background: #000;
+    color: #F2CD49;
+}
+
+.cancell {
+    width: 50%;
+    height: 30px;
+    background: #F2CD49;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 400;
+    margin-left: 85px; 
+}
+
+.cancell:hover{
+    background: #000;
+    color: #F2CD49;
+}

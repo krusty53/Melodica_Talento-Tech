@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_registro.css">
+    <title>Melodica</title>
+</head>
+<body>
+    <section>
+        <div class="login_box">
+          <form action="php/enviar_correo.php" method="post" id="loginForm"> <h2>Registro</h2>
+            <div class="input-box">
+              <input type="text" required id="nombreInput"> <label for="nombreInput">Nombre</label>
+            </div>
+            <div class="input-box">
+              <input type="text" required id="apellidoInput"> <label for="apellidoInput">Apellido</label>
+            </div>
+            <div class="input-box">
+                <input type="email" required id="emailInput"> <label for="emailInput">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="password" required id="passwordInput"> <label for="passwordInput">Password</label>
+            </div>
+            <button class="register"  onclick="register()">Registrarse</button>
+            <button class="cancell" onclick="cancelarRegistro()">Cancelar</button>
+          </form>
+        </div>
+      </section>
+
+      <script>
+        function register() {
+            document.getElementById("loginForm").submit();
+            event.preventDefault();
+        }
+      </script>
+      <script>
+        function cancelarRegistro() {
+            window.location.href = "login.html";
+        }
+    </script>
+    
+</body>
+</html>
