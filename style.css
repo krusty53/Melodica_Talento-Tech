@@ -33,6 +33,15 @@ body {
   
   header #logo img{
     height: 8vh; 
+
+    transform: translateY(-50%); /* Center logo vertically */
+    left: 50%;
+    transform: translateX(-50%); /* Center logo horizontally */
+    margin-top: 60px;
+  }
+  
+  header #logo img{
+    height: 7vh; 
     filter: invert(1);  /*invierto el color de mi png*/
 }
 
