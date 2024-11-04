@@ -9,18 +9,18 @@
 <body>
     <section>
         <div class="login_box">
-          <form action="php/enviar_correo.php" method="post" id="loginForm"> <h2>Registro</h2>
+          <form action="/php/enviar_correo.php" method="POST" id="loginForm"> <h2>Registro</h2>
             <div class="input-box">
-              <input type="text" required id="nombreInput"> <label for="nombreInput">Nombre</label>
+              <input type="text" required name="nombre" id="nombreInput"> <label for="nombreInput">Nombre</label>
             </div>
             <div class="input-box">
-              <input type="text" required id="apellidoInput"> <label for="apellidoInput">Apellido</label>
+              <input type="text" required name="apellido" id="apellidoInput"> <label for="apellidoInput">Apellido</label>
             </div>
             <div class="input-box">
-                <input type="email" required id="emailInput"> <label for="emailInput">Email</label>
+                <input type="email" required name="email" id="emailInput"> <label for="emailInput">Email</label>
             </div>
             <div class="input-box">
-                <input type="password" required id="passwordInput"> <label for="passwordInput">Password</label>
+                <input type="password" required name="password" id="passwordInput"> <label for="passwordInput">Password</label>
             </div>
             <button class="register"  onclick="register()">Registrarse</button>
             <button class="cancell" onclick="cancelarRegistro()">Cancelar</button>
