@@ -34,10 +34,11 @@
     }
 
     .logo img {
-        width: 90%; /* Ajusta la imagen al 100% del ancho de su contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        max-height: 50px; /* Limita la altura máxima de la imagen para que no sobrepase el header */
-        filter: invert(1);
+        width: auto; /* Ajusta automáticamente el ancho para mantener las proporciones */
+        height: auto; /* Mantiene la proporción correcta de la imagen */
+        max-width: 100px; /* Limita el tamaño máximo para que el logo no sea demasiado grande */
+        max-height: 50px; /* Asegura que no sobrepase el header */
+        filter: invert(1); /* Este filtro podría estar cambiando el color del logo, puedes eliminarlo si no es necesario */
     }
 
     nav ul {
