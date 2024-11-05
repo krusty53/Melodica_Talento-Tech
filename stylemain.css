@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
-        background-image: url('/img/bgindex.jpg'); /* Cambia la ruta por la de tu imagen */
+        background-image: url('img/bgindex.jpg'); /* Cambia la ruta por la de tu imagen */
         background-size: cover; /* La imagen cubre todo el espacio disponible */
         background-position: center; /* Centra la imagen */
         background-attachment: fixed; /* La imagen se queda fija cuando haces scroll */
