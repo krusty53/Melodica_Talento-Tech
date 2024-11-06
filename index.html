@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="css/stylemainmediaquery.css">
 </head>
 <body>
    <header class="encabezado">
@@ -13,10 +14,11 @@
     </div>
     <nav>
         <ul>
-           <li>Inicio</li>
+           <li><a href="index.html">Inicio</a></li>
            <li>Fotos</li>
            <li>Musica</li>
-           <li>Contacto</li>
+           <li>Amigos</li>
+           <li><a href="login.html">Salir</a></li>
 
         </ul>
     </nav>
@@ -25,36 +27,46 @@
    
 
    <section class="perfil">
-    <div class="foto">
-        <img src="img/perfil.jpg" alt="">            
+    <div class="foto-nombre">
+        <div class="foto">
+            <img src="img/perfil.jpg" alt="Foto de perfil">
+        </div>
+        <div class="nombre">
+            <h3>German Morris</h3>
+        </div>
     </div>
     <div class="info">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt magnam saepe sit possimus, ut, voluptatum incidunt explicabo eligendi dolor itaque enim quas aut rem velit labore maxime praesentium impedit error?
+        <p>¡Bienvenidos a mi rincón musical! Soy German Morris, músico apasionado por el blues/rock,</p>
+        <p>buscando tocar el alma de las personas con cada melodía. Mi estilo fusiona la intensidad del</p> 
+        <p>blues y la energía del rock, inspirado por leyendas como Hank Williams y Elvis Presley.</p> 
+        <p>A través de mis canciones, busco transmitir emociones profundas, mezclando tradición y</p> 
+        <p>modernidad, con ritmos envolventes y letras que conectan con el corazón.</p>  
+        <p>¡Únete a mi viaje musical y deja que mis sonidos te acompañen en cada momento!</p>
     </div>
    </section>
 
    <section class="tarjetas">
-    <h2>Mis Fotos Cristian</h2>
+    <h2>Mis Fotos Musicales</h2>
     <div class="containerfoto">
         <div class="card">
             <img src="img/foto1.jpg" alt="Foto 1">
             <div class="card-info">
-                <h3>Foto 1</h3>
-                <p>Descripción de la foto 1.</p>
+                <h3>Flema</h3>
+                <p>Show sinfonica de Flema en la Ciudad de Buenos Aires</p>
             </div>
         </div>
         <div class="card">
             <img src="img/foto2.jpg" alt="Foto 2">
             <div class="card-info">
-                <h3>Foto 2</h3>
-                <p>Descripción de la foto 2.</p>
+                <h3>Mi amor</h3>
+                <p>La primera que tuve, la que nunca se olvida</p>
             </div>
         </div>
         <div class="card">
             <img src="img/foto3.jpg" alt="Foto 3">
             <div class="card-info">
-                <h3>Foto 3</h3>
-                <p>Descripción de la foto 3.</p>
+                <h3>Stone Temple Pilots</h3>
+                <p>Tremendo show en el Teatro Vorterix</p>
             </div>
         </div>
     </div>
@@ -92,6 +104,29 @@
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="img/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="img/twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="img/youtube-icon.png" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+        <div class="contact">
+            <p><strong>Contacto:</strong></p>
+            <a href="contacto.html" class="contact-link">Comuniquese con nostros desde aqui.</a>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>

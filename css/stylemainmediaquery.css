@@ -1,0 +1,282 @@
+ /* LOGO EN HEADER */
+
+ @media (max-width: 768px) {
+    .logo img {
+        width: 20vw; /* Aumenta un poco el tamaño relativo en pantallas pequeñas */
+        max-width: 100px; /* Límite máximo para pantallas medianas */
+        min-width: 50px;  /* Límite mínimo para pantallas pequeñas */
+    }
+    .encabezado .logo{
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 25vw; /* Aumenta el tamaño relativo en pantallas muy pequeñas */
+        max-width: 80px; /* Límite máximo para pantallas muy pequeñas */
+        min-width: 40px;  /* Límite mínimo para pantallas muy pequeñas */
+    }
+}
+/*--------------------------------------------------------------------------------------*/
+
+/* NAV EN HEADER */
+
+@media (max-width: 1242px) and (min-width: 897px) {
+    nav ul {
+        font-size: 1.7rem; /* Puedes ajustar este valor según lo que consideres adecuado */
+        gap: 2px;
+    }
+}
+
+
+@media (max-width: 896px) and (min-width: 768px) {
+    nav ul {
+        font-size: 1.5rem; /* Puedes ajustar este valor según lo que consideres adecuado */
+        gap: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 3vw; /* Tamaño de la fuente */
+        gap: 20px; /* Espacio entre items */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        font-size: 3.5vw; /* Tamaño de la fuente*/
+        gap: 1px; /* Espacio entre los items */
+    }
+}
+
+@media (max-width: 375px) {
+    nav ul {
+        font-size: 3.5vw; /* Tamaño de fuente */
+        gap: 0.5px; /* Espacio entre items */
+    }
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/* PERFIL */
+ 
+@media (max-width: 1024px) {
+    .perfil {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info {
+        width: 90%; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info {
+        width: 90%; /* Mantentiene texto dentro de los márgenes */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+.perfil {
+    flex-direction: column; /* Forzar a disposición vertical */
+    gap: 10px; /* Menos espacio entre los elementos */
+    }
+
+.foto {
+    width: 100px; /* Reducir más el tamaño de la foto */
+    height: 100px;
+    }
+
+.info {
+    width: 100%; /* Ocupa todo el ancho en dispositivos muy pequeños */
+    margin-top: 10px; /* Asegura un margen entre la imagen y el texto */
+    }
+
+    .fotos {
+    margin-top: 20px; /* Aumenta el espacio entre las secciones para evitar solapamiento */
+    }
+}
+
+
+/*INFORMACION*/
+
+@media (min-width: 1025px) and (max-width: 1100px) {
+    .perfil {
+        flex-direction: row; /* Asegura que los elementos se mantengan en fila */
+        gap: 30px; /* Ajusta el espacio entre la imagen y la información */
+        justify-content: center; /* Centra el contenido */
+    }
+    
+    .foto {
+        width: 180px; /* Reduce el tamaño de la foto */
+        height: 180px;
+    }
+
+    .info {
+        width: 60%; /* Ajusta el ancho de la información para que se mantenga al costado */
+        font-size: 14px; /* Ajusta el tamaño de la fuente para mantener una buena proporción */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info p {
+        text-align: center; /* Centra el texto */
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1554px) {
+    .info {
+        width: 65%; /* Ajusta el ancho para este rango de resolución */
+        font-size: 14px; /* Reduce ligeramente el tamaño de la fuente */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1366px) {
+    .info {
+        width: 70%; /* Ajusta el ancho para pantallas tipo iPad Pro */
+        font-size: 16px; /* Tamaño de fuente ligeramente reducido */
+        margin-left: auto; /* Centra la sección */
+        margin-right: auto; /* Centra la sección */
+    }
+}
+
+@media (max-width: 1024px) {
+    .info {
+        width: 75%; /* Ajusta el ancho para pantallas tipo tablet */
+        font-size: 11px; /* Tamaño de fuente ligeramente reducido */
+        margin-left: auto; /* Centra la sección */
+        margin-right: auto; /* Centra la sección */
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        width: 90%; /* Más ancho para que el texto no quede tan comprimido */
+        font-size: 12px; /* Reduce ligeramente el tamaño de la fuente */
+        margin-left: 0; /* Centra la sección en pantallas pequeñas */
+        margin-right: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+/* CARD */
+
+@media (max-width: 768px) {
+    .containerfoto {
+    justify-content: center; /* Centra las tarjetas cuando hay dos por fila */
+    }
+    
+    .card {
+    width: 45%; /* Las tarjetas se harán más grandes en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas como móviles */
+    }
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/* MI MUSICA */
+
+@media (max-width: 768px) {
+    .cancion {
+    width: 45%;
+    }
+}
+        
+@media (max-width: 480px) {
+    .cancion {
+    width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cancion {
+        flex-direction: column;
+        align-items: center; /* Centra la imagen y el texto */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .cancion img {
+        width: 150px; /* Ajusta el tamaño de la imagen*/
+        height: 150px;
+        margin-bottom: 10px; /* Añade un pequeño margen entre la imagen y el texto */
+    }
+
+    .info-cancion {
+        text-align: center; /* Cambia la alineación del texto a centrado */
+    }
+
+    .info-cancion h3 {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    .info-cancion p {
+        font-size: 13px; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .cancion {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        padding: 15px; /* Aumenta el padding para darle más espacio */
+    }
+
+    .cancion img {
+        width: 120px; /* Reduce el tamaño de la imagen */
+        height: 120px;
+    }
+
+    .info-cancion h3 {
+        font-size: 14px; /* Ajusta el tamaño de los títulos */
+    }
+
+    .info-cancion p {
+        font-size: 12px; /* Ajusta el tamaño de los párrafos */
+    }
+}
+
+@media (max-width: 375px) {
+    .cancion {
+        width: 100%; /* Sigue ocupando todo el ancho de la pantalla */
+        padding: 10px; /* Reduce un poco el padding para pantallas más pequeñas */
+    }
+
+    .cancion img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .info-cancion h3 {
+        font-size: 13px; /* Ajusta el tamaño de los títulos */
+    }
+
+    .info-cancion p {
+        font-size: 11px; /* Ajusta el tamaño de los párrafos */
+    }
+}
+
