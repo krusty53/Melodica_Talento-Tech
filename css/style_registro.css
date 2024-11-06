@@ -10,7 +10,7 @@ body {
     min-height: 100vh; /* Ensures the body fills the viewport height */
     display: flex; /* Makes body a flex container for stacking elements */
     flex-direction: column; /* Stacks elements vertically */
-    background: url('img/bg_registro.jpg') no-repeat center center fixed; /* Set background on body */
+    background: url('/img/bg_registro.jpg') no-repeat center center fixed; /* Set background on body */
     background-size: cover; /* Cover the entire viewport */
     background-position: center;
   }
