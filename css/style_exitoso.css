@@ -1,0 +1,56 @@
+/* Estilo para centrar el contenido en la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Colocar el logo y el mensaje uno sobre otro */
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 350px;
+    margin-bottom: 40px;
+    filter: invert(1);
+    color: #ffff00; 
+}
+
+
+.neon-box {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    border: 5px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(245, 221, 3, 0.8),  /* Amarillo claro */
+                0 0 30px rgba(245, 221, 3, 0.6), 
+                0 0 40px rgba(245, 221, 3, 0.4), 
+                0 0 50px rgba(245, 221, 3, 0.3);
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Efecto de brillo neón animado */
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 20px rgba(245, 221, 3, 0.8), 
+                    0 0 30px rgba(245, 221, 3, 0.6), 
+                    0 0 40px rgba(245, 221, 3, 0.4), 
+                    0 0 50px rgba(245, 221, 3, 0.3);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(245, 221, 3, 1),  
+                    0 0 40px rgba(245, 221, 3, 0.8), 
+                    0 0 50px rgba(245, 221, 3, 0.6), 
+                    0 0 60px rgba(245, 221, 3, 0.4);
+    }
+}

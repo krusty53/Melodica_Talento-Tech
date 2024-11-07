@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style_contacto.css">
 </head>
-<body>
-    soy el contacto
+<body>  
+
+   <!-- Logo -->
+   <img src="img/logo.png" alt="Logo" class="logo">
+
+   <!-- Título del formulario -->
+   <h2 class="titulo-form">Contáctenos</h2>
+
+   <!-- Contenedor del formulario -->
+   <div class="form-container">
+     <form action="https://formspree.io/f/mdkogwza" method="POST">
+        <label>Your email:
+            <input type="email" name="email">
+        </label>
+        <label>Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+     </form>
+   </div>
+
+   <h3 class="volver-perfil"><a href="index.html">Volver al perfil</a></h3>
+
+   <!-- Línea amarilla debajo del formulario -->
+   <span class="linea"></span>
+
+   <!-- Footer -->
+   <footer class="footer">
+        <p>Cristian Espindola ©2024 Melodica</p>
+   </footer>
+
 </body>
 </html>

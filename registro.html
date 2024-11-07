@@ -9,7 +9,7 @@
 <body>
     <section>
         <div class="login_box">
-         <form action="prueba2.php" method="POST" id="loginForm"> <h2>Registro</h2>
+         <form action="" id="loginForm"> <h2>Registro</h2>
             <div class="input-box">
               <input type="text" required name="nombre" id="nombreInput"> <label for="nombreInput">Nombre</label>
             </div>
@@ -22,13 +22,20 @@
             <div class="input-box">
                 <input type="password" required name="password" id="passwordInput"> <label for="passwordInput">Password</label>
             </div>
-            <button type="submit" class="register">Registrarse</button>
+            <button class="register" onclick="registro()">Registrarse</button>
             <button class="cancell" onclick="cancelarRegistro()">Cancelar</button>
           </form>
         </div>
       </section>
 
-      
+    <!--funcion para cancelar y volver a login-->
+    <script>
+        function registro() {
+          event.preventDefault();
+            window.location.href = "exitoso.html";
+    }
+    </script>
+    <!--funcion para cancelar y volver a login-->
       <script>
         function cancelarRegistro() {
             window.location.href = "login.html";
