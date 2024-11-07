@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="css/stylemain.css">
     <link rel="stylesheet" href="css/stylemainmediaquery.css">
 </head>
 <body>
-   <header class="encabezado">
-    <div class="logo">
-        <img src="img/logo.png" alt="">
-    </div>
-    <nav>
-        <ul>
-           <li><a href="index.html">Inicio</a></li>
-           <li>Fotos</li>
-           <li>Musica</li>
-           <li>Amigos</li>
-           <li><a href="login.html">Salir</a></li>
-
-        </ul>
-    </nav>
-
-   </header>
+    <header class="encabezado">
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i> <!-- Ícono de hamburguesa -->
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="musica.html">Musica</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+            </ul>
+        </nav>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </header>
    
 
    <section class="perfil">
@@ -44,6 +51,8 @@
         <p>¡Únete a mi viaje musical y deja que mis sonidos te acompañen en cada momento!</p>
     </div>
    </section>
+
+   <span class="linea"></span>
 
    <section class="tarjetas">
     <h2>Mis Fotos Musicales</h2>
@@ -104,29 +113,45 @@
         </div>
     </div>
 </section>
+
+<span class="linea"></span>
+
 <footer class="footer">
-    <div class="footer-content">
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="img/facebook-icon.png" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="img/twitter-icon.png" alt="Twitter" class="social-icon">
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="img/youtube-icon.png" alt="YouTube" class="social-icon">
-            </a>
-        </div>
-        <div class="contact">
-            <p><strong>Contacto:</strong></p>
-            <a href="contacto.html" class="contact-link">Comuniquese con nostros desde aqui.</a>
-        </div>
-    </div>
+    <p>Cristian Espindola © 2024</p>
 </footer>
 
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
 
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+     });
+</script>
+<script>
+    // Función para abrir y cerrar la sidebar
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const body = document.body;
+
+        // Alternar la clase para abrir y cerrar la sidebar
+        sidebar.classList.toggle('open');
+        body.classList.toggle('sidebar-open');
+    }
+
+    // Cerrar la sidebar cuando se hace clic fuera de ella
+    window.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('sidebar');
+        const menuIcon = document.querySelector('.menu-icon');
+        
+        // Si se hace clic fuera de la sidebar y el ícono, cerramos la sidebar
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidebar.classList.remove('open');
+            document.body.classList.remove('sidebar-open');
+        }
+    });
+</script>
+
+<script src="https://kit.fontawesome.com/8db860decc.js" crossorigin="anonymous"></script>
 </body>
 </html>

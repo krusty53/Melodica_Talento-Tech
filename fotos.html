@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="css/stylefotos.css">
+    <link rel="stylesheet" href="css/stylefotosmediaquery.css">
+
+</head>
+<body>
+    <header class="encabezado">
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i> <!-- Ícono de hamburguesa -->
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="musica.html">Musica</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+            </ul>
+        </nav>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="login.html">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <h1>Galeria de Fotos</h1>
+    <span class="linea"></span>
+    <section class="galeria">
+        <a href="#image1">
+            <img src="img/foto1.jpg" alt="">
+        </a>
+        <a href="#image2">
+            <img src="img/foto2.jpg" alt="">
+        </a>
+        <a href="#image3">
+            <img src="img/foto3.jpg" alt="">
+        </a>
+        <a href="#image4">
+            <img src="img/foto4.jpg" alt="">
+        </a>
+        <a href="#image5">
+            <img src="img/foto5.jpg" alt="">
+        </a>
+        <a href="#image6">
+            <img src="img/foto6.jpg" alt="">
+        </a>
+        <a href="#image7">
+            <img src="img/foto7.jpg" alt="">
+        </a>
+        <a href="#image8">
+            <img src="img/foto8.jpg" alt="">
+        </a>
+        <a href="#image9">
+            <img src="img/foto9.jpg" alt="">
+        </a>
+    </section>
+
+    <article class="light-box" id="image1">
+        <a href="#image9" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+                
+        <div class="image-container">
+            <img src="img/foto1.jpg" alt="">
+            
+            <div class="caption">
+                <h2>Flema</h2>
+                <p>Show sinfonico de Flema en la ciudad de Buenos Aires</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(1)">❤️</span>
+                <span id="like-count1">0</span> Me gusta
+            </div>
+        </div>
+    
+
+        <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+
+    </article>
+
+    <article class="light-box" id="image2">
+        <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <div class="image-container">
+            <img src="img/foto2.jpg" alt="">
+            
+            <div class="caption">
+                <h2>Mi amor</h2>
+                <p>La primera que tuve, la que nunca se olvida.</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(2)">❤️</span>
+                <span id="like-count2">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image3">
+        <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <div class="image-container">
+            <img src="img/foto3.jpg" alt="">
+            
+            <div class="caption">
+                <h2>Stone Temple Pilots</h2>
+                <p>Tremendo show en el teatro Vorterix</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(3)">❤️</span>
+                <span id="like-count3">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image4">
+        <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto4.jpg" alt="">
+            
+            <div class="caption">
+                <h2>El mejor lugar de la banda</h2>
+                <p>Entre la guitarra y el bajo</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(4)">❤️</span>
+                <span id="like-count4">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image5">
+        <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto5.jpg" alt="">
+            
+            <div class="caption">
+                <h2>Eterno</h2>
+                <p>Ultimo de Charly</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(5)">❤️</span>
+                <span id="like-count5">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image6">
+        <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto6.jpg" alt="">
+            
+            <div class="caption">
+                <h2>La Iguana</h2>
+                <p>Más de 50 años de trayectoria con una presencia permanente en los primeros planos</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(6)">❤️</span>
+                <span id="like-count6">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image7" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image7">
+        <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto7.jpg" alt="">
+            
+            <div class="caption">
+                <h2>El duque blanco</h2>
+                <p>El verdadero Starman</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(7)">❤️</span>
+                <span id="like-count7">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image8" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image8">
+        <a href="#image7" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto8.jpg" alt="">
+            
+            <div class="caption">
+                <h2>Lynyrd Skynyrd</h2>
+                <p>Free Bird el mejor solo de guitarra</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(8)">❤️</span>
+                <span id="like-count8">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image9" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image9">
+        <a href="#image8" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        
+        <div class="image-container">
+            <img src="img/foto9.jpg" alt="">
+            
+            <div class="caption">
+                <h2>The Cure</h2>
+                <p>Would like to think that you would stick around
+                    You know that I'd just die to make you proud</p>
+            </div>
+    
+            <div class="like-container">
+                <span class="like-icon" onclick="incrementLike(9)">❤️</span>
+                <span id="like-count9">0</span> Me gusta
+            </div>
+        </div>
+
+        <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <span class="linea"></span>
+
+    <footer class="footer">
+        <p>Cristian Espindola © 2024</p>
+    </footer>
+    
+    <script>
+        // Función para incrementar el contador de "me gusta"
+        function incrementLike(imageId) {
+            let likeCount = document.getElementById(`like-count${imageId}`);
+            let currentLikes = parseInt(likeCount.innerHTML);
+            likeCount.innerHTML = currentLikes + 1;
+        }
+        
+        // Función para enviar comentarios
+        function submitComment(imageId) {
+            let commentInput = document.getElementById(`comment${imageId}`);
+            let commentList = document.getElementById(`comments-list${imageId}`);
+            
+            if (commentInput.value.trim() !== "") {
+                let newComment = document.createElement('li');
+                newComment.textContent = commentInput.value;
+                commentList.appendChild(newComment);
+                commentInput.value = ""; // Limpiar el campo de comentario
+            }
+        }
+        </script>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const sidebar = document.getElementById('sidebar');
+
+        menuIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+         });
+    </script>
+    <script>
+        // Función para abrir y cerrar la sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const body = document.body;
+    
+            // Alternar la clase para abrir y cerrar la sidebar
+            sidebar.classList.toggle('open');
+            body.classList.toggle('sidebar-open');
+        }
+    
+        // Cerrar la sidebar cuando se hace clic fuera de ella
+        window.addEventListener('click', function(event) {
+            const sidebar = document.getElementById('sidebar');
+            const menuIcon = document.querySelector('.menu-icon');
+            
+            // Si se hace clic fuera de la sidebar y el ícono, cerramos la sidebar
+            if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+                sidebar.classList.remove('open');
+                document.body.classList.remove('sidebar-open');
+            }
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/8db860decc.js" crossorigin="anonymous"></script>
+</body>
+</html>
