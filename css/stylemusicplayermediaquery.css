@@ -62,8 +62,15 @@
         font-size: 0.8rem;  
     }
 
+    .buttons {
+        display: flex;
+        justify-content: space-around;  /* Distribuir los botones uniformemente */
+        flex-wrap: wrap;  /* Permitir que los botones se reorganicen si es necesario */
+    }
+
     .buttons i {
-        font-size: 2rem;  
+        font-size: 1.8rem;  /* Reducir un poco el tamaño de los íconos de control */
+        margin: 5px;  /* Añadir un pequeño margen para dar más espacio entre los botones */
     }
 
     .seek_slider {
@@ -84,12 +91,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70px;  /* Aumentar la altura total del wave */
+        height: 60px;  /* Ajustar la altura total del wave */
     }
 
     #wave .stroke {
-        height: 60px;  /* Aumentar la altura de las barras del wave */
-        width: 10px;    /* Aumentar el ancho de las barras */
-        margin: 0 3px;  /* Ajustar el margen entre barras */
+        height: 50px;  /* Ajustar la altura de las barras del wave */
+        width: 8px;    /* Ajustar el ancho de las barras */
+        margin: 0 2px;  /* Ajustar el margen entre barras */
     }
 }
