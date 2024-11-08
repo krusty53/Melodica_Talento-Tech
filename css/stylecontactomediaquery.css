@@ -33,58 +33,58 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .wrapper {
-        width: 90%;  /* Mantener el ancho en 90% */
-        padding: 10px;  /* Reducir el padding */
-        margin-top: 10px;  /* Reducir margen superior */
-        margin-bottom: 10px; /* Reducir margen inferior */
-        max-height: 80vh;  /* Limitar la altura total del reproductor para dejar espacio al wave */
-        overflow-y: auto;  /* Permitir scroll si es necesario */
+        width: 95%;  /* Aumentar el ancho ligeramente para ocupar más espacio en pantallas pequeñas */
+        padding: 8px;  /* Reducir el padding */
+        margin-top: 5px;  /* Reducir el margen superior */
+        margin-bottom: 5px; /* Reducir el margen inferior */
+        max-height: 75vh;  /* Limitar aún más la altura total del reproductor */
+        overflow-y: auto;  /* Permitir scroll si el contenido es demasiado largo */
     }
 
     .track-art {
-        height: 120px;  /* Reducir la imagen de la carátula */
-        width: 120px;
+        height: 100px;  /* Reducir la imagen de la carátula aún más */
+        width: 100px;
     }
 
     .track-name {
-        font-size: 1.2rem;  /* Reducir el tamaño del nombre de la canción */
+        font-size: 1rem;  /* Reducir el tamaño del nombre de la canción */
     }
 
     .track-artist {
-        font-size: 0.9rem;  /* Ajustar el tamaño del nombre del artista */
+        font-size: 0.8rem;  /* Ajustar el tamaño del nombre del artista */
     }
 
     .buttons i {
-        font-size: 2.5rem;  /* Reducir los íconos de control */
+        font-size: 2rem;  /* Reducir los íconos de control */
     }
 
     .seek_slider {
-        width: 85%;  /* Ajustar el tamaño del slider */
+        width: 80%;  /* Ajustar el tamaño del slider */
     }
 
     .volume_slider {
-        width: 70%;  /* Reducir el tamaño del slider de volumen */
+        width: 60%;  /* Reducir el tamaño del slider de volumen */
     }
 
     /* Ajustar el tamaño del texto de la duración y el tiempo actual */
     .current-time, .total-duration {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     /* Ajustar el contenedor del wave */
     #wave {
-        margin-top: 10px;  /* Espacio entre los botones y las ondas */
+        margin-top: 5px;  /* Reducir el espacio entre los botones y las ondas */
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;  /* Reducir la altura total del wave */
+        height: 40px;  /* Reducir la altura total del wave */
     }
 
     #wave .stroke {
-        height: 30px;  /* Reducir la altura de las barras del wave */
-        width: 5px;    /* Reducir el ancho de las barras */
-        margin: 0 2px;  /* Ajustar el margen entre barras */
+        height: 20px;  /* Reducir aún más la altura de las barras del wave */
+        width: 4px;    /* Reducir el ancho de las barras */
+        margin: 0 1px;  /* Ajustar el margen entre barras */
     }
 }
