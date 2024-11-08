@@ -1,0 +1,85 @@
+/* Para pantallas medianas como tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px; /* Reducir el padding para pantallas más pequeñas */
+        border-radius: 15px;
+    }
+
+    .track-art {
+        width: 200px;
+        height: 200px; /* Reducir el tamaño de la imagen del álbum */
+    }
+
+    .track-name {
+        font-size: 2rem; /* Reducir el tamaño de la fuente para el nombre de la canción */
+    }
+
+    .track-artist {
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente para el nombre del artista */
+    }
+
+    .now-playing {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto para "Now Playing" */
+    }
+
+    .seek_slider {
+        width: 80%; /* Aumentar el ancho del slider en pantallas más pequeñas */
+    }
+
+    .volume_slider {
+        width: 50%; /* Aumentar el ancho del control de volumen */
+    }
+
+    .buttons i {
+        font-size: 1.5rem; /* Reducir el tamaño de los íconos de los botones */
+    }
+
+    .playpause-track i {
+        font-size: 3rem; /* Ajustar el tamaño del botón play/pause */
+    }
+}
+
+/* Para pantallas muy pequeñas como móviles (max-width: 480px) */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 15px; /* Reducir aún más el padding */
+        border-radius: 10px;
+    }
+
+    .track-art {
+        width: 150px;
+        height: 150px; /* Reducir más el tamaño de la imagen del álbum para móviles pequeños */
+    }
+
+    .track-name {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente para el nombre de la canción */
+    }
+
+    .track-artist {
+        font-size: 1rem; /* Ajustar el tamaño de la fuente para el nombre del artista */
+    }
+
+    .now-playing {
+        font-size: 0.8rem; /* Reducir el tamaño del texto para "Now Playing" */
+    }
+
+    .seek_slider {
+        width: 70%; /* Reducir el ancho del slider */
+    }
+
+    .volume_slider {
+        width: 40%; /* Reducir el ancho del control de volumen */
+    }
+
+    .buttons i {
+        font-size: 1.2rem; /* Reducir más el tamaño de los íconos de los botones */
+    }
+
+    .playpause-track i {
+        font-size: 2.5rem; /* Ajustar el tamaño del botón play/pause */
+    }
+
+    #wave {
+        display: none; /* Ocultar las barras de animación en móviles muy pequeños */
+    }
+}
