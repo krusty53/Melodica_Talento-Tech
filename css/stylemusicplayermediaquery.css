@@ -69,8 +69,8 @@
     }
 
     .buttons i {
-        font-size: 1.8rem;  /* Reducir un poco el tamaño de los íconos de control */
-        margin: 5px;  /* Añadir un pequeño margen para dar más espacio entre los botones */
+        font-size: 1.7rem;  /* Reducir un poco el tamaño de los íconos de control */
+        margin: 3px;  /* Añadir un pequeño margen para dar más espacio entre los botones */
     }
 
     .seek_slider {
