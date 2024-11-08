@@ -32,3 +32,42 @@
         padding: 15px; /* Reducir el padding en móviles pequeños */
     }
 }
+
+@media (max-width: 400px) {
+    .wrapper {
+        width: 90%;  /* Mantener el ancho en 90% */
+        padding: 10px;  /* Reducir el padding */
+        margin-top: 20px;  /* Añadir margen superior para que no ocupe todo el espacio */
+        margin-bottom: 20px; /* Añadir margen inferior */
+    }
+
+    .track-art {
+        height: 120px;  /* Reducir la imagen de la carátula */
+        width: 120px;
+    }
+
+    .track-name {
+        font-size: 1.2rem;  /* Reducir aún más el tamaño del nombre de la canción */
+    }
+
+    .track-artist {
+        font-size: 0.9rem;  /* Ajustar el tamaño del nombre del artista */
+    }
+
+    .buttons i {
+        font-size: 2.5rem;  /* Reducir los íconos de control */
+    }
+
+    .seek_slider {
+        width: 85%;  /* Ajustar el slider para que no sea tan largo */
+    }
+
+    .volume_slider {
+        width: 70%;  /* Reducir el tamaño del slider de volumen */
+    }
+
+    /* Ajustar el tamaño del texto de la duración y el tiempo actual */
+    .current-time, .total-duration {
+        font-size: 0.8rem; 
+    }
+}
