@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .logo {
@@ -26,7 +27,7 @@ body {
 
 .titulo-form {
     color: #ffff00; /* Color del texto amarillo */
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 20px 0; /* Margen inferior para separar del logo */
     text-align: center;
 }
@@ -44,12 +45,10 @@ body {
 
 /* Contenedor del formulario */
 .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     margin: 10px 0; /* Reducida la distancia superior/inferior */
-    padding: 40px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 
@@ -66,8 +65,8 @@ form {
 }
 
 label {
-    margin-bottom: 15px;
-    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-size: 1em;
     color: #fff;
 }
 
@@ -83,6 +82,10 @@ input, textarea {
     outline: none;
     box-shadow: 0 0 10px rgba(255, 255, 0, 0.8),
                 0 0 20px rgba(255, 255, 0, 0.6);
+}
+
+textarea {
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
 }
 
 button {

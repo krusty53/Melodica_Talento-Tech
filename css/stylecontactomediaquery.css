@@ -1,0 +1,34 @@
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Ocupa el 90% del ancho en pantallas más pequeñas */
+        padding: 20px; /* Reducir el padding */
+    }
+
+    .logo {
+        width: 200px; /* Reducir el tamaño del logo */
+    }
+
+    .titulo-form {
+        font-size: 1.6em; /* Ajustar el tamaño del título */
+    }
+
+    button {
+        font-size: 1em; /* Reducir el tamaño del botón */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px; /* Reducir más el tamaño del logo para móviles muy pequeños */
+    }
+
+    .titulo-form {
+        font-size: 1.4em; /* Ajustar más el tamaño del título */
+    }
+
+    .form-container {
+        padding: 15px; /* Reducir el padding en móviles pequeños */
+    }
+}
