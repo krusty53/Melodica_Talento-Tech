@@ -37,7 +37,7 @@
     .wrapper {
         width: 90%;  /* Mantener el ancho en 90% */
         padding: 10px;  /* Reducir el padding */
-        margin-top: 20px;  /* Añadir margen superior para que no ocupe todo el espacio */
+        margin-top: 20px;  /* Añadir margen superior */
         margin-bottom: 20px; /* Añadir margen inferior */
     }
 
@@ -59,7 +59,7 @@
     }
 
     .seek_slider {
-        width: 85%;  /* Ajustar el slider para que no sea tan largo */
+        width: 85%;  /* Ajustar el slider */
     }
 
     .volume_slider {
@@ -68,6 +68,21 @@
 
     /* Ajustar el tamaño del texto de la duración y el tiempo actual */
     .current-time, .total-duration {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
+    }
+
+    /* Ajustar el contenedor del wave */
+    #wave {
+        margin-top: 10px;  /* Espacio entre los botones y las ondas */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;  /* Reducir la altura total del wave */
+    }
+
+    #wave .stroke {
+        height: 30px;  /* Reducir la altura de las barras del wave */
+        width: 5px;    /* Reducir el ancho de las barras */
+        margin: 0 2px;  /* Ajustar el margen entre barras */
     }
 }
