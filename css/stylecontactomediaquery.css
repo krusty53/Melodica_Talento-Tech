@@ -6,7 +6,7 @@
     }
 
     .logo {
-        width: 200px; /* Reducir el tamaño del logo */
+        width: 00px; /* Reducir el tamaño del logo */
     }
 
     .titulo-form {
@@ -30,61 +30,5 @@
 
     .form-container {
         padding: 15px; /* Reducir el padding en móviles pequeños */
-    }
-}
-
-@media (max-width: 480px) {
-    .wrapper {
-        width: 95%;  /* Aumentar el ancho ligeramente para ocupar más espacio en pantallas pequeñas */
-        padding: 8px;  /* Reducir el padding */
-        margin-top: 5px;  /* Reducir el margen superior */
-        margin-bottom: 5px; /* Reducir el margen inferior */
-        max-height: 75vh;  /* Limitar aún más la altura total del reproductor */
-        overflow-y: auto;  /* Permitir scroll si el contenido es demasiado largo */
-    }
-
-    .track-art {
-        height: 100px;  /* Reducir la imagen de la carátula aún más */
-        width: 100px;
-    }
-
-    .track-name {
-        font-size: 1rem;  /* Reducir el tamaño del nombre de la canción */
-    }
-
-    .track-artist {
-        font-size: 0.8rem;  /* Ajustar el tamaño del nombre del artista */
-    }
-
-    .buttons i {
-        font-size: 2rem;  /* Reducir los íconos de control */
-    }
-
-    .seek_slider {
-        width: 80%;  /* Ajustar el tamaño del slider */
-    }
-
-    .volume_slider {
-        width: 60%;  /* Reducir el tamaño del slider de volumen */
-    }
-
-    /* Ajustar el tamaño del texto de la duración y el tiempo actual */
-    .current-time, .total-duration {
-        font-size: 0.7rem;
-    }
-
-    /* Ajustar el contenedor del wave */
-    #wave {
-        margin-top: 5px;  /* Reducir el espacio entre los botones y las ondas */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;  /* Reducir la altura total del wave */
-    }
-
-    #wave .stroke {
-        height: 20px;  /* Reducir aún más la altura de las barras del wave */
-        width: 4px;    /* Reducir el ancho de las barras */
-        margin: 0 1px;  /* Ajustar el margen entre barras */
     }
 }

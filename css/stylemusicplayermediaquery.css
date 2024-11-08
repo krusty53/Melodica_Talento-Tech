@@ -39,47 +39,57 @@
     }
 }
 
-/* Para pantallas muy pequeñas como móviles (max-width: 480px) */
 @media (max-width: 480px) {
     .wrapper {
-        padding: 15px; /* Reducir aún más el padding */
-        border-radius: 10px;
+        width: 95%;  
+        padding: 8px;  
+        margin-top: 5px;  
+        margin-bottom: 5px; 
+        max-height: 75vh;  
+        overflow-y: auto;  
     }
 
     .track-art {
-        width: 150px;
-        height: 150px; /* Reducir más el tamaño de la imagen del álbum para móviles pequeños */
+        height: 100px;  
+        width: 100px;
     }
 
     .track-name {
-        font-size: 1.5rem; /* Ajustar el tamaño de la fuente para el nombre de la canción */
+        font-size: 1rem;  
     }
 
     .track-artist {
-        font-size: 1rem; /* Ajustar el tamaño de la fuente para el nombre del artista */
-    }
-
-    .now-playing {
-        font-size: 0.8rem; /* Reducir el tamaño del texto para "Now Playing" */
-    }
-
-    .seek_slider {
-        width: 70%; /* Reducir el ancho del slider */
-    }
-
-    .volume_slider {
-        width: 40%; /* Reducir el ancho del control de volumen */
+        font-size: 0.8rem;  
     }
 
     .buttons i {
-        font-size: 1.2rem; /* Reducir más el tamaño de los íconos de los botones */
+        font-size: 2rem;  
     }
 
-    .playpause-track i {
-        font-size: 2.5rem; /* Ajustar el tamaño del botón play/pause */
+    .seek_slider {
+        width: 80%;  
     }
 
+    .volume_slider {
+        width: 60%;  
+    }
+
+    .current-time, .total-duration {
+        font-size: 0.7rem;
+    }
+
+    /* Ajustar el contenedor del wave */
     #wave {
-        display: none; /* Ocultar las barras de animación en móviles muy pequeños */
+        margin-top: 4px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;  /* Aumentar la altura total del wave */
+    }
+
+    #wave .stroke {
+        height: 60px;  /* Aumentar la altura de las barras del wave */
+        width: 10px;    /* Aumentar el ancho de las barras */
+        margin: 0 3px;  /* Ajustar el margen entre barras */
     }
 }
