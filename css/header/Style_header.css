@@ -1,0 +1,64 @@
+/*ESTILOS PARA EL ENCABEZADO EN GRAL*/
+
+header.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000; /* Para que el fondo sea sólido */
+    color: #ffff00;
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/*ESTILOS PARA EL NAV EN EL HEADER*/
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+/*sacar subrayado y cambio de color para los item del nav*/
+nav a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff; /* Color inicial del enlace */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/*efecto neon*/
+
+nav a:hover {
+    color: #ffff00; 
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+}
+
+
+
+/* Estilos para el ícono de hamburguesa */
+.menu-icon {
+    display: flex; 
+    cursor: pointer;
+    font-size: 30px; /* Tamaño adecuado para el ícono */
+}
+
+.menu-icon i {
+    color: #fff; /* Color del ícono */
+}
+
+

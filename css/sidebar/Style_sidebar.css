@@ -1,0 +1,39 @@
+/* Estilos para la sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;  /* Oculta la sidebar por defecto */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+    z-index: 1002;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilo para mostrar la sidebar cuando se abre */
+.sidebar.open {
+    left: 0;
+}
+
+
+
+
+

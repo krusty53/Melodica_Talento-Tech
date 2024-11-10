@@ -1,0 +1,82 @@
+/*Media Query Pantallas En Vertical/*
+
+/* por defecto (Pantallas grandes) */
+#logo img {
+    height: 100px; /* Tamaño inicial del logo */
+}
+
+/* Pantallas muy grandes (desktop) */
+@media (min-width: 1200px) {
+    #logo img {
+        height: 150px;
+    }
+}
+
+/* Tablets (entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    #logo img {
+        height: 80px;
+    }
+}
+
+/* Dispositivos pequeños (Smartphones grandes)*/
+@media (max-width: 768px) {
+    #logo img {
+        height: 70px;
+    }
+}
+
+/* Smartphones medianos (entre 480px y 600px) */
+@media (max-width: 600px) {
+    #logo img {
+        height: 60px;
+    }
+}
+
+/* Smartphones pequeños*/
+@media (max-width: 480px) {
+    #logo img {
+        height: 50px;
+    }
+}
+
+/* Pantallas muy pequeñas*/
+@media (max-width: 360px) {
+    #logo img {
+        height: 40px;
+    }
+}
+
+/* Samsung Galaxy S8 (360px x 740px) */
+@media (max-width: 360px) and (max-height: 740px) {
+    #logo {
+        margin-bottom: 15px; /* Ajusta la separación entre el logo y el formulario */
+    }
+    #logo img {
+        height: 45px; /* Reduce el tamaño del logo */
+    }
+}
+
+/* Galaxy Z Fold plegado (373px x 819px) */
+@media (max-width: 373px) and (max-height: 819px) {
+    #logo {
+        margin-bottom: 20px;
+    }
+    #logo img {
+        height: 50px; /* Ajusta el tamaño del logo para pantallas plegadas */
+    }
+}
+
+/* Galaxy Z Fold desplegado (768px x 1812px) */
+@media (min-width: 768px) and (max-width: 1812px) {
+    #logo {
+        margin-bottom: 30px;
+    }
+    #logo img {
+        height: 70px; /* Ajusta el tamaño del logo para pantallas desplegadas */
+    }
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*Media Query pantallas en horizontal*/

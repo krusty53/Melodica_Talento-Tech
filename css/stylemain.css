@@ -17,115 +17,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    /*background-image: url('/img/bgindex.jpg'); Cambia la ruta por la de tu imagen */
     background: #000 ;
     background-size: cover; /* La imagen cubre todo el espacio disponible */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* La imagen se queda fija cuando haces scroll */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
     min-height: 100vh; /* Asegura que el body tenga al menos el 100% del alto de la ventana */
 }
-
-/*ESTILOS PARA EL ENCABEZADO EN GRAL*/
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    z-index: 1001;
-    color: #ffff00; 
-    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
-}
-
-
-
-/*--------------------------------------------------------------------------------------*/
-
-
-/*ESTILOS PARA EL NAV EN EL HEADER*/
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5vw;
-}
-
-/*sacar subrayado y cambio de color para los item del nav*/
-nav a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: #fff; /* Color inicial del enlace */
-    transition: all 0.3s ease-in-out; /* Transición suave */
-}
-
-/*efecto neon al pasar el mouse por encima*/
-
-nav a:hover {
-    color: #ffff00; 
-    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
-}
-
-/* Estilos para el ícono de hamburguesa */
-.menu-icon {
-    display: flex; /* Siempre mostrar el menú de hamburguesa */
-    cursor: pointer;
-    font-size: 30px; /* Tamaño adecuado para el ícono */
-}
-
-.menu-icon i {
-    color: #fff; /* Color del ícono */
-}
-
-/* Estilos para la sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;  /* Oculta la sidebar por defecto */
-    width: 250px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .9);
-    color: white;
-    padding-top: 50px;
-    transition: left 0.3s ease;
-    z-index: 1002;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 20px;
-    text-align: center;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Estilo para mostrar la sidebar cuando se abre */
-.sidebar.open {
-    left: 0;
-}
-
-
-
-
-/* Mostrar el ícono de hamburguesa siempre */
-.menu-icon {
-    display: flex;
-}
-
 
 /*--------------------------------------------------------------------------------------*/
 
@@ -133,7 +30,7 @@ nav a:hover {
 
 .perfil {
     display: flex;
-    gap: 200px;
+    gap: 60px;
     width: 100%;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -142,6 +39,7 @@ nav a:hover {
     margin-right: auto; /* Centrando el contenedor */
     justify-content: center; /* Asegura que el contenido dentro esté centrado */
     align-items: center;
+    margin-bottom: 30px;
 }
 
 /*ESTILOS PARA FOTO DENTRO DE PERFIL*/
@@ -150,6 +48,7 @@ nav a:hover {
     display: flex;
     flex-direction: column; /* Coloca la foto y el nombre en columna */
     align-items: center;    /* Centra la foto y el nombre */
+    margin-left: 20px;
 }
 
 .foto {

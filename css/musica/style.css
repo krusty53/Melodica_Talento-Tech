@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 20px; /* Añadido un poco de padding para espaciado */
+    background: #000;
+    flex-wrap: nowrap;
+}
+
+/* Playlist container (3 en fila) */
+.playlist-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    width: 60%; /* Ajustamos el ancho */
+    padding: 20px;
+}
+
+/* Playlist details */
+.playlist-details {
+    width: 35%; /* Ancho reducido para que quede al lado derecho */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Altura fija para evitar expansión del contenedor principal */
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+/* Playlist item */
+.playlist-item {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playlist-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.songs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Botón de agregar playlist */
+.add-playlist {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-playlist i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.add-playlist:hover {
+    background-color: #45a049;
+}
+
+.playlist-details {
+    display: none;
+}
+/* Library Section */
+.my-library {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+    clear: both; /* Asegura que quede abajo del contenedor principal */
+}
+
+.my-library h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.song-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.song-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+
+.cancel-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}

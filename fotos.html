@@ -6,6 +6,8 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="css/stylefotos.css">
     <link rel="stylesheet" href="css/stylefotosmediaquery.css">
+    <link rel="stylesheet" href="css/header/Style_header.css">
+    <link rel="stylesheet" href="css/sidebar/Style_sidebar.css">
 
 </head>
 <body>
@@ -284,37 +286,9 @@
         }
         </script>
 
-    <script>
-        const menuIcon = document.getElementById('menu-icon');
-        const sidebar = document.getElementById('sidebar');
+   
 
-        menuIcon.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-         });
-    </script>
-    <script>
-        // Función para abrir y cerrar la sidebar
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const body = document.body;
-    
-            // Alternar la clase para abrir y cerrar la sidebar
-            sidebar.classList.toggle('open');
-            body.classList.toggle('sidebar-open');
-        }
-    
-        // Cerrar la sidebar cuando se hace clic fuera de ella
-        window.addEventListener('click', function(event) {
-            const sidebar = document.getElementById('sidebar');
-            const menuIcon = document.querySelector('.menu-icon');
-            
-            // Si se hace clic fuera de la sidebar y el ícono, cerramos la sidebar
-            if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
-                sidebar.classList.remove('open');
-                document.body.classList.remove('sidebar-open');
-            }
-        });
-    </script>
+<script src="js/sidebar.js"></script>
 
     <script src="https://kit.fontawesome.com/8db860decc.js" crossorigin="anonymous"></script>
 </body>

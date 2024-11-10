@@ -48,7 +48,7 @@ body{
 
 .now-playing{
     font-size: 1rem;
-    color: #fff;
+    color: #FFCC00;
 }
 
 .track-name{
@@ -93,7 +93,7 @@ body{
     -moz-appearance: none;
     appearance: none;
     height: 5px;
-    background: #83a9ff;
+    background: #b9970c;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
@@ -106,7 +106,7 @@ body{
     width: 15px;
     height: 15px;
     background: #fff;
-    border: 2px solid #3774ff;
+    border: 2px solid #FFCC00;
     cursor: grab;
     border-radius: 100%;
 }

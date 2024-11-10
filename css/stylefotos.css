@@ -16,106 +16,6 @@ body{
 
 }
 
-/*ESTILOS PARA EL ENCABEZADO EN GRAL*/
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    z-index: 1001;
-    color: #ffff00; 
-    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
-}
-
-
-
-/*--------------------------------------------------------------------------------------*/
-
-
-/*ESTILOS PARA EL NAV EN EL HEADER*/
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5vw;
-}
-
-/*sacar subrayado y cambio de color para los item del nav*/
-nav a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: #fff; /* Color inicial del enlace */
-    transition: all 0.3s ease-in-out; /* Transición suave */
-}
-
-/*efecto neon al pasar el mouse por encima*/
-
-nav a:hover {
-    color: #ffff00; 
-    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
-}
-
-/* Estilos para el ícono de hamburguesa */
-.menu-icon {
-    display: flex; /* Siempre mostrar el menú de hamburguesa */
-    cursor: pointer;
-    font-size: 30px; /* Tamaño adecuado para el ícono */
-}
-
-.menu-icon i {
-    color: #fff; /* Color del ícono */
-}
-
-/* Estilos para la sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;  /* Oculta la sidebar por defecto */
-    width: 250px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .9);
-    color: white;
-    padding-top: 50px;
-    transition: left 0.3s ease;
-    z-index: 1002;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 20px;
-    text-align: center;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Estilo para mostrar la sidebar cuando se abre */
-.sidebar.open {
-    left: 0;
-}
-
-
-
-
-/* Mostrar el ícono de hamburguesa siempre */
-.menu-icon {
-    display: flex;
-}
-
 
 /*--------------------------------------------------------------------------------------*/
 
@@ -197,10 +97,10 @@ h1{
 .close{
     display: block;
     position: absolute;
-    top: 40px;
-    right: 40px;
-    background: #851919;
-    color: #fff;
+    top: 210px;
+    right: 200px;
+    background: #000;
+    color: #ffff00;
     text-decoration: none;
     width: 40px;
     height: 40px;
@@ -211,13 +111,14 @@ h1{
 
 .next{
     display: block;
-    background: #851919;
-    color: #fff;
+    background: #000;
+    color: #ffff00;
     height: 30px;
     width: 30px;
     line-height: 30px;
     text-decoration: none;
     text-align: center;
+    margin: 10px;
 }
 
 

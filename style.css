@@ -17,42 +17,25 @@ body {
     background-position: center;
   }
   
-  header {
-    position: relative;
-    height: 100px;
-  }
-  
-  #logo {
-    position: absolute;
-    top: 70%;
-    transform: translateY(-50%); /* Centra logo verticalmente */
-    left: 50%;
-    transform: translateX(-50%); /* Centra logo horizontalmente */
-    margin-top: 40px;
-  }
-  
-  header #logo img{
-    height: 8vh; 
 
-    transform: translateY(-50%); /* Center logo vertically */
-    left: 50%;
-    transform: translateX(-50%); /* Center logo horizontally */
-    margin-top: 60px;
-  }
   
-  header #logo img{
-    height: 7vh; 
-    filter: invert(1);  /*invierto el color de mi png*/
+section {
+   display: flex;
+   flex-direction: column; /* Apilar el logo y el formulario verticalmente */
+   justify-content: center;
+   align-items: center; /* Centra todo horizontalmente */
+   width: 100%;
+   height: 100vh;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    
+#logo {
+   margin-bottom: 10px; /* Ajusta la separación entre el logo y el formulario */
 }
+
+#logo img {
+   height: 100px; /* Ajusta el tamaño del logo si es necesario */
+   filter: invert(1);
+}  
 
 
 .login_box{
