@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente al principio */
+    min-height: 100vh; /* Asegura que el body tenga al menos el 100% del alto de la ventana */
+    background: #000; /* Color de fondo */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;  /* Hace que los elementos dentro se apilen verticalmente */
+    align-items: center;  /* Alinea los elementos horizontalmente al centro */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px  px 0;
+    font-size: 40px;
+    color: #ffff00;
+    margin-bottom: 10px;
+}
+
+.linea {
+    background: #ffff00;
+    height: 5px;
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
+    margin-bottom: 350px;
+   
+}
+
+.friends-section {
+    padding: 10px;
+    text-align: center;
+    width: 80%;  /* Ajusta el ancho de la sección si es necesario */
+    max-width: 1000px;  /* Limita el ancho máximo para pantallas grandes */
+    margin-bottom: 90px;
+}
+
+.friends-container {
+    display: grid;  /* Grid tarjetas alineadas*/
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));  /* Ajuste de número de columnas*/
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Tarjetas de Amigos */
+.friend-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;  /* Permite la rotación 3D */
+    position: relative;
+    display: flex;
+    justify-content: center;  /* Esto ayuda a centrar el contenido dentro de la tarjeta */
+    align-items: center;  /* Alinea el contenido verticalmente */
+    box-sizing: border-box;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;   
+    backface-visibility: hidden;  /* Esconde el lado posterior cuando está girando */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-front {
+    background-color: #000;
+    border: 2px solid #FFCC00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FFCC00;
+}
+
+.card-back {
+    background-color: #FFCC00;
+    border: 2px solid #000;
+    transform: rotateY(180deg);
+    padding: 15px;
+    color: #fff;
+}
+
+/* Rotación individual al pasar el mouse */
+.friend-card:hover .card-front {
+    transform: rotateY(180deg);  /* Gira solo la tarjeta seleccionada */
+}
+
+.friend-card:hover .card-back {
+    transform: rotateY(0deg);  /* Muestra la parte trasera de la tarjeta seleccionada */
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;  /* Foto circular */
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.friend-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Botones de cada tarjeta */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    position: absolute;
+    bottom: 15px;  /* Coloca los botones en la parte inferior de la tarjeta */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra los botones horizontalmente */
+}
+
+.view-profile-btn, .remove-friend-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #000;
+    color: #FFCC00;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.view-profile-btn:hover, .remove-friend-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*--------------------------------------------------------------------------------------*/
+/* Estilo para el Footer */
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}

@@ -226,6 +226,9 @@ p{
     animation-delay: 0s;
 }
 
+/*-----------------------------------------------------------------------------------------*/
+/*Estilo para el link de regreso a musica*/
+
 a{
     text-decoration: none;
     color: #fff;

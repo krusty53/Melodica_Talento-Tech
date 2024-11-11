@@ -1,14 +1,30 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/*Fuentes*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*--------------------------------------------------------------------------------------*/
+
+/*General*/
+
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: #000;
-    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000 ;
+    background-size: cover; /* La imagen cubre todo el espacio disponible */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen se queda fija cuando haces scroll */
+    min-height: 100vh; /* Asegura que el body tenga al menos el 100% del alto de la ventana */
+}
+
+/*--------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------------------*/
 
@@ -64,6 +80,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease; /* Transición del zoom in */
+}
+
+.playlist-item:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
 }
 
 .playlist-item p {
@@ -396,3 +417,35 @@ body {
     background-color: rgba(255, 0, 0, 1);
 }
 
+
+/*-----------------------------------------------------------------------*/
+
+/*Estilos Tendencias*/
+
+.tendencias {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.tendencias-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trend-item {
+    margin: 10px;
+    width: calc(33.33% - 20px);  /* Tres ítems por fila */
+    text-align: center;
+}
+
+.trend-item img {
+    width: 100%;
+    height: auto;
+}
+
+.trend-title {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}

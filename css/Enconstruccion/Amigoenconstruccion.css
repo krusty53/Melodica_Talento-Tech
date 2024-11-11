@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Establecemos el fondo de la página */
+body {
+    background-image: url('/img/enconstruccion2.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para el contenedor centrado */
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el texto */
+h1 {
+    color: white;
+    font-size: 5rem; /* Tamaño grande */
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff00;
+}
