@@ -1,155 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Playlists</title>
-    <link rel="stylesheet" href="css/musica/style.css">
-    <link rel="stylesheet" href="css/musica/modals.css">
-    <link rel="stylesheet" href="css/header/Style_header.css">
-    <link rel="stylesheet" href="css/sidebar/Style_sidebar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-</head>
-<body>
-    
-    <header class="encabezado">
-        <div class="menu-icon" id="menu-icon">
-            <i class="fa-solid fa-bars"></i> <!-- Ícono de hamburguesa -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Playlists</title>
+        <link rel="stylesheet" href="css/musica/style.css">
+        <link rel="stylesheet" href="css/musica/modals.css">
+        <link rel="stylesheet" href="css/header/Style_header.css">
+        <link rel="stylesheet" href="css/sidebar/Style_sidebar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        
+        <header class="encabezado">
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i> <!-- Ícono de hamburguesa -->
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="musica.html">Musica</a></li>
+                    <li><a href="amigos.html">Amigos</a></li>
+                </ul>
+            </nav>
+            <div id="sidebar" class="sidebar">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61568504186421" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/Melodica_Social" target="_blank">X</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLCNZUqUsh3Jjq5KLvETsbw" target="_blank">YouTube</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="main-container">
+            <!-- ------------------------Mis Playlists----------------------------- -->
+            <section class="playlist-container">
+                <div class="playlist-item" onclick="showPlaylist(1)">
+                    <img src="img/playlist/playlist1.jpg" alt="Playlist 1" />
+                    <p>Rock</p>
+                </div>
+                <div class="playlist-item" onclick="showPlaylist(2)">
+                    <img src="img/playlist/playlist2.jpg" alt="Playlist 2" />
+                    <p>Janis</p>
+                </div>
+                <div class="playlist-item" onclick="showPlaylist(3)">
+                    <img src="img/playlist/playlist3.jpg" alt="Playlist 3" />
+                    <p>Punk Rock</p>
+                </div>
+                <div class="playlist-item" onclick="showPlaylist(4)">
+                    <img src="img/playlist/playlist4.jpg" alt="Playlist 4" />
+                    <p>Folk</p>
+                </div>
+                <div class="playlist-item" onclick="showPlaylist(5)">
+                    <img src="img/playlist/playlist5.jpg" alt="Playlist 5" />
+                    <p>Irish Rock</p>
+                </div>
+                <div class="playlist-item add-playlist" onclick="showAddPlaylistModal()">
+                    <i class="fa fa-plus"></i>
+                    <p class="playlist-text">Agregar Playlist</p>
+                </div>
+            </section>
+        
+            <!-- --------------------muestra detalles------------- -->
+            <section class="playlist-details" id="playlist-details">
+                <div class="playlist-header">
+                    <h2 id="playlist-name">Playlist Name</h2>
+                    <p id="playlist-count">6 tracks</p>
+                </div>
+        
+                <div class="songs-list" id="songs-list">
+                </div>
+                
+                <button class="play-playlist" id="play-playlist-btn" onclick="playPlaylist()">Reproducir</button>
+                <button class="modify-playlist" id="modify-playlist-btn" onclick="modifyPlaylist()">Modify Playlist</button>
+                <button class="close-details" onclick="closePlaylistDetails()">Cerrar Detalles</button>
+
+            </section>
         </div>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="musica.html">Musica</a></li>
-                <li><a href="amigos.html">Amigos</a></li>
-            </ul>
-        </nav>
-        <div id="sidebar" class="sidebar">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=61568504186421" target="_blank">Facebook</a></li>
-                <li><a href="https://x.com/Melodica_Social" target="_blank">X</a></li>
-                <li><a href="https://www.youtube.com/channel/UCLCNZUqUsh3Jjq5KLvETsbw" target="_blank">YouTube</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Cerrar Sesion</a></li>
-            </ul>
-        </div>
-    </header>
+        
+        
     
-    <div class="main-container">
-        <!-- Mis Playlists -->
-        <section class="playlist-container">
-            <div class="playlist-item" onclick="showPlaylist(1)">
-                <img src="img/playlist/playlist1.jpg" alt="Playlist 1" />
-                <p>Playlist 1</p>
-            </div>
-            <div class="playlist-item" onclick="showPlaylist(2)">
-                <img src="img/playlist/playlist2.jpg" alt="Playlist 2" />
-                <p>Playlist 2</p>
-            </div>
-            <div class="playlist-item" onclick="showPlaylist(3)">
-                <img src="img/playlist/playlist3.jpg" alt="Playlist 3" />
-                <p>Playlist 3</p>
-            </div>
-            <div class="playlist-item" onclick="showPlaylist(4)">
-                <img src="img/playlist/playlist4.jpg" alt="Playlist 4" />
-                <p>Playlist 4</p>
-            </div>
-            <div class="playlist-item" onclick="showPlaylist(5)">
-                <img src="img/playlist/playlist5.jpg" alt="Playlist 5" />
-                <p>Playlist 5</p>
-            </div>
-            <div class="playlist-item add-playlist" onclick="showAddPlaylistModal()">
-                <i class="fa fa-plus"></i>
-                <p>Add Playlist</p>
-            </div>
-        </section>
-    
-        <!-- Lista de canciones de la playlist seleccionada -->
-        <section class="playlist-details" id="playlist-details">
-            <div class="playlist-header">
-                <h2 id="playlist-name">Playlist Name</h2>
-                <p id="playlist-count">6 tracks</p>
-            </div>
-    
-            <div class="songs-list" id="songs-list">
-                <!-- Songs will be inserted here -->
-            </div>
-    
-            <button class="modify-playlist" id="modify-playlist-btn" onclick="modifyPlaylist()">Modify Playlist</button>
-            <button class="close-details" onclick="closePlaylistDetails()">Cerrar Detalles</button>
-        </section>
-    </div>
-    
-    <!-- Biblioteca de canciones -->
-    <section class="my-library">
-        <h2>Mi Biblioteca</h2>
-        <div id="libraryContainer">
-            <!-- Aquí se agregarán las canciones -->
-        </div>
-    </section>
-    <!-- Botón para abrir el modal -->
-    <button id="openModalBtn">Agregar Canción</button>
 
-    <!-- Modal para agregar playlist -->
-<div id="add-playlist-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeAddPlaylistModal()">&times;</span>
-        <h2>Create New Playlist</h2>
-        <form id="add-playlist-form">
-            <label for="newPlaylistName">Playlist Name:</label>
-            <input type="text" id="newPlaylistName" required><br><br>
-
-            <button type="button" onclick="addNewPlaylist()">Create Playlist</button>
-            <!-- Botón de Cancelar -->
-            <button type="button" class="cancel-btn" onclick="closeAddPlaylistModal()">Cancel</button>
-        </form>
-    </div>
-</div>
-
-<!-- Modal para agregar canción a una playlist existente -->
-<div id="modify-playlist-modal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModifyPlaylistModal()">&times;</span>
-        <h2>Add Song to Playlist</h2>
-        <form id="add-song-form">
-            <label for="songTitle">Song Title:</label>
-            <input type="text" id="songTitle" required><br><br>
-
-            <label for="songArtist">Artist:</label>
-            <input type="text" id="songArtist" required><br><br>
-
-            <label for="songCover">Song Cover URL:</label>
-            <input type="text" id="songCover" required><br><br>
-
-            <button type="button" onclick="addSongToPlaylist(event)">Add Song</button>
-            <!-- Botón de Cancelar -->
-            <button type="button" class="cancel-btn" onclick="closeModifyPlaylistModal()">Cancel</button>
-        </form>
-    </div>
-</div>
-    
-    <!-- Ventana emergente (modal) -->
-    <div id="uploadModal" class="modal">
+        <!-- ---------------------------Modal para agregar playlist------------------------------------ -->
+    <div id="add-playlist-modal" class="modal">
         <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
-            <h2>Agregar Nueva Canción</h2>
-            <!-- Formulario de selección de archivo -->
-            <label for="songFile">Selecciona un archivo de música (solo local):</label>
-            <input type="file" id="songFile" name="songFile" accept="audio/*">
-            <label for="songTitle">Título de la canción:</label>
-            <input type="text" id="songTitle" name="songTitle" placeholder="Título de la canción">
-            <label for="artist">Artista:</label>
-            <input type="text" id="artist" name="artist" placeholder="Nombre del artista">
-            <label for="duration">Duración:</label>
-            <input type="text" id="duration" name="duration" placeholder="Duración (Ej. 3:30)">
-            <button id="submitBtn">Subir Canción</button>
+            <span class="close-btn" onclick="closeAddPlaylistModal()">&times;</span>
+            <h2>Create New Playlist</h2>
+            <form id="add-playlist-form">
+                <label for="newPlaylistName">Playlist Name:</label>
+                <input type="text" id="newPlaylistName" required><br><br>
+
+                <button type="button" onclick="addNewPlaylist()">Create Playlist</button>
+                <!-- ---------------------------Botón de Cancelar------------------------------------- -->
+                <button type="button" class="cancel-btn" onclick="closeAddPlaylistModal()">Cancel</button>
+            </form>
         </div>
     </div>
-    <script src="js/detalles.js"></script>
-    <script src="js/musica.js"></script>
-    <script src="js/sidebar.js"></script>
-</body>
-</html>
+
+    <!-- --------------------Modal para agregar canción a una playlist existente----------------------- -->
+    <div id="modify-playlist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModifyPlaylistModal()">&times;</span>
+            <h2>Add Song to Playlist</h2>
+            <form id="add-song-form">
+                <label for="songTitle">Song Title:</label>
+                <input type="text" id="songTitle" required><br><br>
+
+                <label for="songArtist">Artist:</label>
+                <input type="text" id="songArtist" required><br><br>
+
+                <label for="songCover">Song Cover URL:</label>
+                <input type="text" id="songCover" required><br><br>
+
+                <button type="button" onclick="addSongToPlaylist(event)">Add Song</button>
+                <!-- ---------------Botón de Cancelar--------------------------------------------------- -->
+                <button type="button" class="cancel-btn" onclick="closeModifyPlaylistModal()">Cancel</button>
+            </form>
+        </div>
+    </div>
+        
+    <!-- --------------------------------------------------------------------------------------------  --> 
+
+        <!-- ----------------------Biblioteca de canciones---------------------------------------------- -->
+        <section class="my-library">
+            <h2>Mi Biblioteca</h2>
+            <div id="libraryContainer">
+                <div class="song">
+                    <img src="musica/img/hurt.jpg" alt="Hurt" class="cover">
+                    <span class="song-title">Hurt</span>
+                    <span class="artist-name">Jhonny Cash</span>
+                    <span class="duration">3:49</span>
+                </div>
+                <div class="song">
+                    <img src="musica/img/high.jpg" alt="High Hope   " class="cover">
+                    <span class="song-title">High Hopes</span>
+                    <span class="artist-name">Pink Floyd</span>
+                    <span class="duration">8:35</span>
+                </div>
+                <div class="song">
+                    <img src="musica/img/led.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Stairway to Heaven</span>
+                    <span class="artist-name">Led Zeppelin</span>
+                    <span class="duration">8:01</span>
+                </div>
+                <div class="song">
+                    <img src="musica/img/flema.jpg" alt="Y aun yo te recuerdo" class="cover">
+                    <span class="song-title">Y aun yo te recuerdo</span>
+                    <span class="artist-name">Flema</span>
+                    <span class="duration">3:21</span>
+                </div>
+                <div class="song">
+                    <img src="musica/img/yeah.jpg" alt="Cheated Hearts" class="cover">
+                    <span class="song-title">Cheated Hearts</span>
+                    <span class="artist-name">Yeah Yeah Yeahs</span>
+                    <span class="duration">3:44</span>
+                </div>
+                <div class="song">
+                    <img src="musica/img/suedehead.jpg" alt="Suedehead" class="cover">
+                    <span class="song-title">Suedehead</span>
+                    <span class="artist-name">Morrissey</span>
+                    <span class="duration">3:59</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/2/janis1.jpg" alt="Piece of my Heart" class="cover">
+                    <span class="song-title">Piece of my Heart</span>
+                    <span class="artist-name">Janis Joplin</span>
+                    <span class="duration">4:14</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/2/janis2.jpg" alt="Cry Baby" class="cover">
+                    <span class="song-title">Cry Baby</span>
+                    <span class="artist-name">Janis Joplin</span>
+                    <span class="duration">3:58</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/2/janis3.jpg" alt="Maybe" class="cover">
+                    <span class="song-title">Maybe</span>
+                    <span class="artist-name">Janis Joplin</span>
+                    <span class="duration">3:42</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/2/janis4.jpg" alt="Kozmic Blues" class="cover">
+                    <span class="song-title">Kozmic Blues</span>
+                    <span class="artist-name">Janis Joplin</span>
+                    <span class="duration">4:24</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/3/punk1.jpg" alt="First Date" class="cover">
+                    <span class="song-title">First Date</span>
+                    <span class="artist-name">Blink 182</span>
+                    <span class="duration">3:32</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/3/punk2.jpg" alt="The Kids Aren't Alrigth" class="cover">
+                    <span class="song-title">The Kids Aren't Alrigth</span>
+                    <span class="artist-name">The Offspring</span>
+                    <span class="duration">3:00</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/3/punk3.jpg" alt="Ya no sos igual" class="cover">
+                    <span class="song-title">Ya no sos igual</span>
+                    <span class="artist-name">2 Minutos</span>
+                    <span class="duration">3:03</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/3/punk4.jpg" alt="Pet Sematary" class="cover">
+                    <span class="song-title">Pet Sematary</span>
+                    <span class="artist-name">Ramones</span>
+                    <span class="duration">3:25</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/4/folk1.jpg" alt="Harvest Moon" class="cover">
+                    <span class="song-title">Harvest Moon</span>
+                    <span class="artist-name">Neil Young</span>
+                    <span class="duration">5:05</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/4/folk2.jpg" alt="Heart of Gold" class="cover">
+                    <span class="song-title">Heart of Gold</span>
+                    <span class="artist-name">Neil Young</span>
+                    <span class="duration">3:08</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/4/folk3.jpg" alt="Wild Horses" class="cover">
+                    <span class="song-title">Wild Horses</span>
+                    <span class="artist-name">The Rolling Stones</span>
+                    <span class="duration">5:41</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/5/irish1.jpg" alt="Black Betty" class="cover">
+                    <span class="song-title">Black Betty</span>
+                    <span class="artist-name">Ram Jam</span>
+                    <span class="duration">2:25</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/5/irish2.jpg" alt="I'm Shipping Up To Boston" class="cover">
+                    <span class="song-title">I'm Shipping Up To Boston</span>
+                    <span class="artist-name">Dropkick Murphys</span>
+                    <span class="duration">2:45</span>
+                </div>
+                <div class="song">
+                    <img src="img/playlist/5/irish3.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Rose Tattoo</span>
+                    <span class="artist-name">Dropkick Murphys</span>
+                    <span class="duration">5:27</span>
+                </div>
+
+                
+            </div>
+
+            <!-- ------------------------Botón para abrir el modal de agregar canciones------------------  -->
+            <button id="openModalBtn">Agregar Canción</button>
+        </section>
+        
+        <!-- Ventana emergente (modal) -->
+        <div id="uploadModal" class="modal">
+            <div class="modal-content">
+                <h2>Agregar Nueva Canción</h2>
+
+                <!-- Formulario de selección de archivo  FALTA DARLE ESTILO 10/11/24-->
+                <label for="songFile">Selecciona un archivo de música:</label>
+                <input type="file" id="songFile" name="songFile" accept="audio/*">
+                <label for="songTitle">Título de la canción:</label>
+                <input type="text" id="songTitle" name="songTitle" placeholder="Título de la canción">
+                <label for="artist">Artista:</label>
+                <input type="text" id="artist" name="artist" placeholder="Nombre del artista">
+                <label for="duration">Duración:</label>
+                <input type="text" id="duration" name="duration" placeholder="Duración (Ej. 3:30)">
+                <button id="submitBtn">Subir Canción</button>
+                <button type="button" class="cancel-btn" onclick="closeUploadModal()">Cancelar</button>
+                
+            </div>
+        </div>
+        <div id="success-message" class="hidden">Canción subida correctamente</div>
+        <script src="js/musica.js"></script>
+        <script src="js/sidebar.js"></script>
+    </body>
+    </html>
