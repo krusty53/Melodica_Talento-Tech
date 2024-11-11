@@ -13,6 +13,7 @@ header.encabezado {
     background-color: #000; /* Para que el fondo sea sólido */
     color: #ffff00;
     text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+    margin-bottom: 10px;
 }
 
 
