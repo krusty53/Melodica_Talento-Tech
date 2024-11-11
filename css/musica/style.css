@@ -173,6 +173,56 @@ body {
     color: #ffff00 /* Color más tenue para el artista */
 }
 
+/*------------------------------------ Botones en detalles-------------------------------*/
+/* Estilo general para los botones dentro de detalles */
+.playlist-details button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo para el botón de reproducir*/
+.playlist-details .play-playlist {
+    background-color: #FFCC00; 
+    color: #fff;
+}
+
+.playlist-details .play-playlist:hover {
+    background-color: #000;
+    color: #FFCC00;
+    transform: scale(1.05);
+}
+
+/* Estilo para el botón de modificar */
+.playlist-details .modify-playlist {
+    background-color: #FFCC00; 
+    color: #fff;
+}
+
+.playlist-details .modify-playlist:hover {
+    background-color: #000;
+    color: #FFCC00;
+    transform: scale(1.05);
+}
+
+/* Estilo para el botón de cerrar detalles */
+.playlist-details .close-details {
+    background-color: #FFCC00;
+    color: white;
+}
+
+.playlist-details .close-details:hover {
+    background-color: #000;
+    color: #FFCC00;
+    transform: scale(1.05);
+}
+
+
+
 /*----------------------------------------------------------------------------------------*/
 
 
@@ -186,6 +236,7 @@ body {
     margin: 10px 10px;
     clear: both; /* Asegura que quede abajo del contenedor principal */
     border: 2px solid #FFCC00;
+    border-radius: 50px;
 }
 
 .my-library h2 {
@@ -198,7 +249,7 @@ body {
 #libraryContainer {
     display: grid;
     grid-template-columns: auto 2fr 1.5fr auto; /* Ajusta las proporciones entre las columnas */
-    gap: 10px; /* Espacio más grande entre las columnas */
+    gap: 10px; /* Espacio entre las columnas */
     width: 80%;
     padding: 20px;
     color: #fff;
@@ -206,7 +257,7 @@ body {
 
 .song {
     display: contents;
-    margin-bottom: 100px; /* Aumenta la separación entre las filas */
+    margin-bottom: 100px; /* Separación entre las filas */
 }
 
 .cover {
@@ -220,14 +271,14 @@ body {
     grid-column: 2;
     text-align: left;
     align-self: center;
-    margin-left: 100px; /* Añade más separación entre la portada y el título */
+    margin-left: 100px; /* Separación entre la portada y el título */
 }
 
 .artist-name {
     grid-column: 3;
     text-align: left;
     align-self: center;
-    margin-right: 10px; /* Opcional: ajusta la distancia con la duración */
+    margin-right: 10px; 
 }
 
 .duration {
