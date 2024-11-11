@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background: #000;
+    user-select: none; /*evita la seleccion general*/
+    -webkit-user-select: none; /*especifico para chrome y safari*/
+    -moz-user-select: none; /*Mozilla*/
+    -ms-user-select: none; /* Para Microsoft Edge */
+
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #ff00ff;
+}
+
+/*estilos para el span*/
+
+.linea {
+    background: #ff00ff; /* Color de fondo fucsia brillante */
+    height: 5px;
+    width: 100%;
+    display: block;
+    box-shadow: 
+        0 0 15px rgba(255, 0, 255, 0.8),  /* Sombra cercana con más intensidad */
+        0 0 30px rgba(255, 0, 255, 0.6),  /* Sombra intermedia */
+        0 0 45px rgba(255, 0, 255, 0.4),  /* Sombra más lejana para el brillo suave */
+        0 0 60px rgba(255, 0, 255, 0.2);  /* Sombra más lejana para extender el efecto */
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px; /*Espacio ente los elementos del grid*/
+    padding: 40px 0;
+    overflow: hidden;
+
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    overflow: auto;
+}
+
+
+.light-box img{
+    width: 60vw;
+    max-height: 50vw;
+    position: relative;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 210px;
+    right: 200px;
+    background: #000;
+    color: #ffff00;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next{
+    display: block;
+    background: #000;
+    color: #ffff00;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.image-container {
+    position: relative; /* Hacemos que el contenedor controle la posición de los elementos hijos */
+    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    background: #fff;
+}
+
+
+.like-container {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    z-index: 1100;
+}
+
+.image-container img {
+    width: 60vw;
+    max-height: 50vw;     /* Hace que la altura de la imagen sea proporcional al contenedor */
+    object-fit: contain;  /* Asegura que las imágenes mantengan su proporción sin recortar */
+    position: relative;  /* Mantiene la imagen dentro del contenedor */
+}
+
+.like-icon {
+    font-size: 24px;
+    cursor: pointer; /* Cambia el cursor al de una mano */
+    margin-right: 10px;
+    transition: transform 0.2s, font-size 0.2s; /* Añade una transición suave */
+}
+
+.like-icon:hover {
+    transform: scale(1.5); /* Agranda el corazón al pasar el mouse */
+    font-size: 28px; /* Cambia el tamaño también si lo prefieres */
+}
+
+.like-container span {
+    margin-right: 5px; /* Agrega un pequeño margen entre el corazón y el texto */
+}
+
+/*ESTILOS PARA EL FOOTER*/
+
+
+.footer {
+    background-color: #060c21;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
