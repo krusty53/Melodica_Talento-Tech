@@ -71,8 +71,9 @@
             <img src="amigos/1/foto1.jpg" alt="">
             
             <div class="caption">
-                <h2>Flema</h2>
-                <p>Show sinfonico de Flema en la ciudad de Buenos Aires</p>
+                <h2>Heroes del Silencio</h2>
+                <p>Y si te piensas echar atrás
+                    Ya tienes muchas huellas que borrar</p>
             </div>
     
             <div class="like-container">
@@ -94,8 +95,9 @@
             <img src="amigos/1/foto2.jpg" alt="">
             
             <div class="caption">
-                <h2>Mi amor</h2>
-                <p>La primera que tuve, la que nunca se olvida.</p>
+                <h2>Enrique y Andres</h2>
+                <p>¿Qué otra cosa puedo hacer?
+                    Si no olvido, moriré.</p>
             </div>
     
             <div class="like-container">
@@ -115,8 +117,8 @@
             <img src="amigos/1/foto3.jpg" alt="">
             
             <div class="caption">
-                <h2>Stone Temple Pilots</h2>
-                <p>Tremendo show en el teatro Vorterix</p>
+                <h2>La chispa adecuada</h2>
+                <p>No se distinguir entre besos y raices</p>
             </div>
     
             <div class="like-container">
@@ -136,8 +138,9 @@
             <img src="amigos/1/foto4.jpg" alt="">
             
             <div class="caption">
-                <h2>El mejor lugar de la banda</h2>
-                <p>Entre la guitarra y el bajo</p>
+                <h2>La Ley</h2>
+                <p>Solamente encontré
+                    El necio precio de volverme a ver</p>
             </div>
     
             <div class="like-container">
@@ -157,8 +160,8 @@
             <img src="amigos/1/foto5.jpg" alt="">
             
             <div class="caption">
-                <h2>Eterno</h2>
-                <p>Ultimo de Charly</p>
+                <h2>Pixies</h2>
+                <p>Where is my mind?</p>
             </div>
     
             <div class="like-container">
@@ -178,8 +181,9 @@
             <img src="amigos/1/foto6.jpg" alt="">
             
             <div class="caption">
-                <h2>La Iguana</h2>
-                <p>Más de 50 años de trayectoria con una presencia permanente en los primeros planos</p>
+                <h2>Deftones</h2>
+                <p>Diamonds rain across the sky
+                    And shower me into the same</p>
             </div>
     
             <div class="like-container">
@@ -199,8 +203,8 @@
             <img src="amigos/1/foto7.jpg" alt="">
             
             <div class="caption">
-                <h2>El duque blanco</h2>
-                <p>El verdadero Starman</p>
+                <h2>The Cure</h2>
+                <p>Boys don't cry</p>
             </div>
     
             <div class="like-container">
@@ -220,8 +224,8 @@
             <img src="amigos/1/foto8.jpg" alt="">
             
             <div class="caption">
-                <h2>Lynyrd Skynyrd</h2>
-                <p>Free Bird el mejor solo de guitarra</p>
+                <h2>Robert Smith</h2>
+                <p>Remembering you standing quiet in the rain</p>
             </div>
     
             <div class="like-container">
@@ -233,6 +237,7 @@
         <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
         <a href="#" class="close">X</a>
     </article>
+    <a href="amigo1.html" class="volver">Volver al Perfil</a>
     
     
     <span class="linea"></span>
@@ -248,24 +253,10 @@
             let currentLikes = parseInt(likeCount.innerHTML);
             likeCount.innerHTML = currentLikes + 1;
         }
-        
-        // Función para enviar comentarios
-        function submitComment(imageId) {
-            let commentInput = document.getElementById(`comment${imageId}`);
-            let commentList = document.getElementById(`comments-list${imageId}`);
-            
-            if (commentInput.value.trim() !== "") {
-                let newComment = document.createElement('li');
-                newComment.textContent = commentInput.value;
-                commentList.appendChild(newComment);
-                commentInput.value = ""; // Limpiar el campo de comentario
-            }
-        }
-        </script>
+     </script>   
+      
 
-   
-
-<script src="js/sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 
     <script src="https://kit.fontawesome.com/8db860decc.js" crossorigin="anonymous"></script>
 </body>

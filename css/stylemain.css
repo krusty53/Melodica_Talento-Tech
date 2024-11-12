@@ -110,6 +110,12 @@ body {
     text-align: center;
     font-weight: bold;
     margin-top: 20px; /* Añade un poco de espacio entre la foto y el nombre */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 80px yellow;
 }
 
 .info {
@@ -270,6 +276,11 @@ body {
     display: flex;
     gap: 15px;
 }
+
+.cancion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.7), 0 0 25px rgba(255, 255, 0, 0.7);
+  }
     
 .cancion img {
     width: 100px;

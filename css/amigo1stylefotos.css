@@ -92,10 +92,11 @@ h1{
 }
 
 
-.light-box img{
-    width: 60vw;
-    max-height: 50vw;
-    position: relative;
+.light-box img {
+    width: 80vw;   
+    max-width: 800px; 
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain;  
 }
 
 .light-box:target{
@@ -105,8 +106,8 @@ h1{
 .close{
     display: block;
     position: absolute;
-    top: 210px;
-    right: 200px;
+    top: 150px;
+    right: 400px;
     background: #000;
     color: #ffff00;
     text-decoration: none;
@@ -139,10 +140,10 @@ h1{
 
 .like-container {
     position: absolute;
-    bottom: 60px;
-    right: 0;
-    background: transparent;
-    padding: 5px;
+    bottom: 70px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo negro con 60% de opacidad */
+    padding: 5px 8px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -187,3 +188,24 @@ h1{
     width: 100%;
     
 }
+
+.volver {
+    display: block;
+    text-align: center;
+    font-size: 24px; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #000; /* Cambia el color del texto */
+    text-decoration: none; /* Elimina la subrayado */
+    background-color: #ffff00; /* Color de fondo para hacerlo más visible */
+    padding: 10px 20px; /* Añade algo de espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 50px auto; /* Centra horizontalmente y añade espacio superior */
+    width: 300px; /* Ancho fijo para el botón */
+}
+
+.volver:hover {
+    background-color: #000; /* Cambia el color al pasar el cursor */
+    color: #ffff00; /* Mantiene el color del texto */
+    border: 2px solid #ffff00;
+}
+

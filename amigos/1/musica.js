@@ -163,8 +163,6 @@ function playPlaylist() {
 // Función para abrir el modal de subir canción
 function openUploadModal() {
     document.getElementById("uploadModal").style.display = "block";
-    
-
 }
 
 // Asocia la función al botón correcto
@@ -179,3 +177,9 @@ function closeUploadModal() {
 document.getElementById("closeModal").addEventListener("click", closeUploadModal);
 
 
+// Mensaje de subido correctamente
+document.getElementById("submitBtn").addEventListener("click", function() {
+  
+    // Mensaje de éxito
+    alert("Canción subida correctamente!");
+});

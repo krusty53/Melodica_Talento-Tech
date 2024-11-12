@@ -19,13 +19,19 @@ body{
 
 /*--------------------------------------------------------------------------------------*/
 
-h1{
+h1 {
     font-weight: 400;
     text-align: center;
     padding: 20px 0;
     font-size: 40px;
     margin-top: 40px;
-    color: #ffff00;
+    color: #fff; /* El color del texto */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px yellow,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 80px yellow;
 }
 
 .linea{
@@ -86,10 +92,11 @@ h1{
 }
 
 
-.light-box img{
-    width: 60vw;
-    max-height: 50vw;
-    position: relative;
+.light-box img {
+    width: 80vw;   /* Fija el ancho de las imágenes al 80% del ancho de la ventana */
+    max-width: 800px; /* Opcional: Fija un ancho máximo para pantallas más grandes */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: contain;  /* Asegura que la imagen se ajuste al contenedor sin deformarse */
 }
 
 .light-box:target{
@@ -99,8 +106,8 @@ h1{
 .close{
     display: block;
     position: absolute;
-    top: 210px;
-    right: 200px;
+    top: 150px;
+    right: 400px;
     background: #000;
     color: #ffff00;
     text-decoration: none;
@@ -133,9 +140,9 @@ h1{
 
 .like-container {
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     right: 0;
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo negro con 60% de opacidad */
     padding: 5px;
     border-radius: 5px;
     display: flex;

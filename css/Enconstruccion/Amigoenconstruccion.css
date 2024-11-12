@@ -6,7 +6,7 @@ html, body {
 
 /* Establecemos el fondo de la página */
 body {
-    background-image: url('https://raw.githubusercontent.com/krusty53/Melodica_Talento-Tech/main/img/enconstruccion2.jpg'); /* Reemplaza con tu imagen */
+    background-image: url('https://raw.githubusercontent.com/krusty53/Melodica_Talento-Tech/main/img/enconstruccion2.jpg'); 
     background-size: cover; /* Para cubrir toda la pantalla */
     background-position: center;
     display: flex;

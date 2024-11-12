@@ -271,6 +271,11 @@ body {
     display: flex;
     gap: 15px;
 }
+
+.cancion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.7), 0 0 25px rgba(255, 0, 255, 0.7);
+  }
     
 .cancion img {
     width: 100px;
@@ -326,4 +331,25 @@ body {
     bottom: 0;
     width: 100%;
     
+}
+
+
+.volver {
+    display: block;
+    text-align: center;
+    font-size: 24px; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #000; /* Cambia el color del texto */
+    text-decoration: none; /* Elimina la subrayado */
+    background-color: #ffff00; /* Color de fondo para hacerlo más visible */
+    padding: 10px 20px; /* Añade algo de espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 50px auto; /* Centra horizontalmente y añade espacio superior */
+    width: 300px; /* Ancho fijo para el botón */
+}
+
+.volver:hover {
+    background-color: #000; /* Cambia el color al pasar el cursor */
+    color: #ffff00; /* Mantiene el color del texto */
+    border: 2px solid #ffff00;
 }

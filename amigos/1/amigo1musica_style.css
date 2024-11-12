@@ -51,7 +51,9 @@ body {
     width: 55%; /* Ajustamos el ancho */
     padding: 20px;
     border: 2px solid;
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.8), 
+            0 0 20px rgba(255, 0, 128, 0.6), 
+            0 0 30px rgba(255, 0, 128, 0.4);
     border-radius: 50px;
     background: transparent;
     filter: blur(1);
@@ -91,7 +93,7 @@ body {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white;
+    color: rgb(235, 27, 131);
     font-size: 18px;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -107,7 +109,7 @@ body {
 
 /* Botón de agregar playlist */
 .add-playlist {
-    background-color: #FFCC00;
+    background-color: #ca1284;
     color: white;
     font-size: 24px;
     display: flex;
@@ -124,8 +126,8 @@ body {
 
 .add-playlist:hover {
     background-color: #000;
-    color: #FFCC00;
-    border: 2px solid #FFCC00;
+    color: #e215b6;
+    border: 2px solid #c71291;
 }
 
 .add-playlist p.playlist-text {
@@ -133,7 +135,7 @@ body {
 }
 
 .add-playlist:hover p.playlist-text {
-    color: #FFCC00;
+    color: #cc059a;
 }
 
 .playlist-details {
@@ -149,12 +151,14 @@ body {
     padding: 20px;
     background-color: transparent;
     border: 2px solid;
-    box-shadow: 0 0 10px rgba(218, 121, 10, 0.8), 0 0 20px rgba(255, 255, 0, 0.6), 0 0 30px rgba(255, 255, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.8), 
+            0 0 20px rgba(255, 0, 128, 0.6), 
+            0 0 30px rgba(255, 0, 128, 0.4);
     border-radius: 50px;    
     height: 400px; /* Altura fija para evitar expansión del contenedor principal */
     overflow-y: auto; /* Permite el desplazamiento vertical */
     margin-right: 50px;
-    color: #fff;
+    color: rgb(226, 29, 144);
 }
 
 /* Actualiza la clase de las canciones para que estén alineadas en fila */
@@ -163,7 +167,7 @@ body {
     align-items: center; /* Alinea verticalmente la imagen, título y artista */
     margin-bottom: 20px;
     padding: 10px;
-    border-bottom: 1px solid #FFCC00; /* Opcional: Para añadir una línea divisoria */
+    border-bottom: 1px solid #dd2095; /* línea divisoria ente item */
 }
 
 /* Imagen de la canción */
@@ -178,20 +182,19 @@ body {
 .song-details {
     display: flex;
     flex-direction: column; /* Pone el título sobre el artista */
-   
 }
 
 /* Estilo del título de la canción */
 .song-details .song-title {
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+  
 }
 
 /* Estilo del artista */
 .song-details .song-artist {
     font-size: 14px;
-    color: #ffff00 /* Color más tenue para el artista */
+   
 }
 
 /*------------------------------------ Botones en detalles-------------------------------*/
@@ -208,37 +211,37 @@ body {
 
 /* Estilo para el botón de reproducir*/
 .playlist-details .play-playlist {
-    background-color: #FFCC00; 
+    background-color: #d61596; 
     color: #fff;
 }
 
 .playlist-details .play-playlist:hover {
     background-color: #000;
-    color: #FFCC00;
+    color: #be1199;
     transform: scale(1.05);
 }
 
 /* Estilo para el botón de modificar */
 .playlist-details .modify-playlist {
-    background-color: #FFCC00; 
+    background-color: #d61596; 
     color: #fff;
 }
 
 .playlist-details .modify-playlist:hover {
     background-color: #000;
-    color: #FFCC00;
+    color: #be1199;
     transform: scale(1.05);
 }
 
 /* Estilo para el botón de cerrar detalles */
 .playlist-details .close-details {
-    background-color: #FFCC00;
+    background-color: #d61596;
     color: white;
 }
 
 .playlist-details .close-details:hover {
     background-color: #000;
-    color: #FFCC00;
+    color: #be1199;
     transform: scale(1.05);
 }
 
@@ -256,7 +259,7 @@ body {
     width: 50%;
     margin: 10px 10px;
     clear: both; /* Asegura que quede abajo del contenedor principal */
-    border: 2px solid #FFCC00;
+    border: 2px solid #810777;
     border-radius: 50px;
 }
 
@@ -266,19 +269,19 @@ body {
     color: #fff;
     margin-left: 400px;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px yellow,
-                 0 0 20px yellow,
-                 0 0 40px yellow,
-                 0 0 80px yellow;
+text-transform: uppercase;
+text-shadow: 0 0 10px fuchsia,
+             0 0 20px fuchsia,
+             0 0 40px fuchsia,
+             0 0 80px fuchsia;
 }
 
 #libraryContainer {
     display: grid;
-    grid-template-columns: auto 2fr 1.5fr auto; /* Ajusta las proporciones entre las columnas */
-    gap: 10px; /* Espacio entre las columnas */
+    grid-template-columns: auto auto auto auto auto auto; 
+    gap: 10px;
     width: 80%;
-    padding: 20px;
+    padding: 5px;
     color: #fff;
 }
 
@@ -334,7 +337,28 @@ body {
     color: #fff;
 }
 
+.add-container {
+    grid-column: 6; /* Nueva columna al final */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.add-button {
+    background-color: #ff00ff; /* Fucsia */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #000;
+    color: #be1199;
+    border: 2px solid #c5109e;
+}
 
 /*------------------------------------------------------------------------------------/*
 /*Estilos para ventana modal agregar cancion*/
@@ -352,7 +376,7 @@ body {
 }
 
 #openModalBtn {
-    background-color: #FFCC00; 
+    background-color: #e412c1; 
     color: #000;
     padding: 15px 32px;
     text-align: center;
@@ -381,16 +405,18 @@ body {
     background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo negro sólido */
     margin: 10% auto;
     padding: 20px;
-    border: 2px solid #ffea00; /* Bordes amarillos neón */
+    border: 2px solid #db0f8d; /* Bordes amarillos neón */
     width: 50%;
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 15px #ffea00; /* Sombra amarilla brillante */
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.8), 
+            0 0 20px rgba(255, 0, 128, 0.6), 
+            0 0 30px rgba(255, 0, 128, 0.4); /* Sombra amarilla brillante */
     color: #fff; /* Texto en blanco */
 }
 
 /* Encabezado del modal */
 .modal-content h2 {
-    color: #ffea00;
+    color: #eb16bc;
     text-align: center;
 }
 
@@ -407,7 +433,7 @@ body {
     width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ffea00;
+    border: 1px solid #c5109e;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
     color: #fff;
@@ -418,10 +444,10 @@ body {
     width: 45%; /* Reduced width to allow for spacing */
     padding: 12px;
     margin: 5px;
-    background-color: #ffea00;
+    background-color: #eb10d8;
     border: none;
     border-radius: 5px;
-    color: #000;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -430,9 +456,29 @@ body {
 /* Botón al hacer hover */
 .modal-content button:hover {
     background-color: #000;
-    color: #FFCC00;
+    color: #d61596;
+    border: 2px solid #d61596;
 }
 
 
-/*-----------------------------------------------------------------------*/
+.volver {
+    display: block;
+    text-align: center;
+    font-size: 24px; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #000; /* Cambia el color del texto */
+    text-decoration: none; /* Elimina la subrayado */
+    background-color: #ffff00; /* Color de fondo para hacerlo más visible */
+    padding: 10px 20px; /* Añade algo de espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 50px auto; /* Centra horizontalmente y añade espacio superior */
+    width: 300px; /* Ancho fijo para el botón */
+}
+
+.volver:hover {
+    background-color: #000; /* Cambia el color al pasar el cursor */
+    color: #ffff00; /* Mantiene el color del texto */
+    border: 2px solid #ffff00;
+}
+
 

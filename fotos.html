@@ -271,20 +271,7 @@
             let currentLikes = parseInt(likeCount.innerHTML);
             likeCount.innerHTML = currentLikes + 1;
         }
-        
-        // Función para enviar comentarios
-        function submitComment(imageId) {
-            let commentInput = document.getElementById(`comment${imageId}`);
-            let commentList = document.getElementById(`comments-list${imageId}`);
-            
-            if (commentInput.value.trim() !== "") {
-                let newComment = document.createElement('li');
-                newComment.textContent = commentInput.value;
-                commentList.appendChild(newComment);
-                commentInput.value = ""; // Limpiar el campo de comentario
-            }
-        }
-        </script>
+    </script>
 
    
 
