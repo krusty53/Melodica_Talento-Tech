@@ -42,32 +42,28 @@
             <!-- ------------------------Mis Playlists----------------------------- -->
             <section class="playlist-container">
                 <div class="playlist-item" onclick="showPlaylist(1)">
-                    <img src="img/playlist/playlist1.jpg" alt="Playlist 1" />
-                    <p>Rock</p>
+                    <img src="amigos/1/musica/lista1.png" alt="Playlist 1" />
+                    <p>All</p>
                 </div>
                 <div class="playlist-item" onclick="showPlaylist(2)">
-                    <img src="img/playlist/playlist2.jpg" alt="Playlist 2" />
-                    <p>Janis</p>
+                    <img src="amigos/1/musica/lista2.jpg" alt="Playlist 2" />
+                    <p>Heroes</p>
                 </div>
                 <div class="playlist-item" onclick="showPlaylist(3)">
-                    <img src="img/playlist/playlist3.jpg" alt="Playlist 3" />
-                    <p>Punk Rock</p>
+                    <img src="amigos/1/musica/lista3.jpg" alt="Playlist 3" />
+                    <p>Rock Nacional</p>
                 </div>
                 <div class="playlist-item" onclick="showPlaylist(4)">
-                    <img src="img/playlist/playlist4.jpg" alt="Playlist 4" />
-                    <p>Folk</p>
+                    <img src="amigos/1/musica/lista4.jpg" alt="Playlist 4" />
+                    <p>Alternativo</p>
                 </div>
                 <div class="playlist-item" onclick="showPlaylist(5)">
-                    <img src="img/playlist/playlist5.jpg" alt="Playlist 5" />
-                    <p>Irish Rock</p>
-                </div>
-                <div class="playlist-item add-playlist" onclick="showAddPlaylistModal()">
-                    <i class="fa fa-plus"></i>
-                    <p class="playlist-text">Agregar Playlist</p>
+                    <img src="amigos/1/musica/lista5.jpg" alt="Playlist 5" />
+                    <p>Ladies</p>
                 </div>
             </section>
         
-            <!-- --------------------muestra detalles------------- -->
+            <!-- ---------------------------------muestra detalles--------------------------------- -->
             <section class="playlist-details" id="playlist-details">
                 <div class="playlist-header">
                     <h2 id="playlist-name">Playlist Name</h2>
@@ -78,82 +74,39 @@
                 </div>
                 
                 <button class="play-playlist" id="play-playlist-btn" onclick="playPlaylist()">Reproducir</button>
-                <button class="modify-playlist" id="modify-playlist-btn" onclick="modifyPlaylist()">Modify Playlist</button>
                 <button class="close-details" onclick="closePlaylistDetails()">Cerrar Detalles</button>
 
             </section>
         </div>
-        
-        
+
     
-
-        <!-- ---------------------------Modal para agregar playlist------------------------------------ -->
-    <div id="add-playlist-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeAddPlaylistModal()">&times;</span>
-            <h2>Create New Playlist</h2>
-            <form id="add-playlist-form">
-                <label for="newPlaylistName">Playlist Name:</label>
-                <input type="text" id="newPlaylistName" required><br><br>
-
-                <button type="button" onclick="addNewPlaylist()">Create Playlist</button>
-                <!-- ---------------------------Botón de Cancelar------------------------------------- -->
-                <button type="button" class="cancel-btn" onclick="closeAddPlaylistModal()">Cancel</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- --------------------Modal para agregar canción a una playlist existente----------------------- -->
-    <div id="modify-playlist-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModifyPlaylistModal()">&times;</span>
-            <h2>Add Song to Playlist</h2>
-            <form id="add-song-form">
-                <label for="songTitle">Song Title:</label>
-                <input type="text" id="songTitle" required><br><br>
-
-                <label for="songArtist">Artist:</label>
-                <input type="text" id="songArtist" required><br><br>
-
-                <label for="songCover">Song Cover URL:</label>
-                <input type="text" id="songCover" required><br><br>
-
-                <button type="button" onclick="addSongToPlaylist(event)">Add Song</button>
-                <!-- ---------------Botón de Cancelar--------------------------------------------------- -->
-                <button type="button" class="cancel-btn" onclick="closeModifyPlaylistModal()">Cancel</button>
-            </form>
-        </div>
-    </div>
-        
-    <!-- --------------------------------------------------------------------------------------------  --> 
-
         <!-- ----------------------Biblioteca de canciones---------------------------------------------- -->
         <section class="my-library">
             <h2>Mi Biblioteca</h2>
             <div id="libraryContainer">
                 <div class="song">
-                    <img src="musica/img/hurt.jpg" alt="Hurt" class="cover">
-                    <span class="song-title">Hurt</span>
-                    <span class="artist-name">Jhonny Cash</span>
-                    <span class="duration">3:49</span>
+                    <img src="amigos/1/musica/lista2.jpg" alt="Portada del Tema" class="cover">
+                    <span class="song-title">Sirena Varada</span>
+                    <span class="artist-name">Heroes del Silencio</span>
+                    <span class="duration">4:27</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(1)">❤️</span>
-                        <span id="like-count1">3</span> Me gusta
+                        <span id="like-count1">13</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="musica/img/high.jpg" alt="High Hope   " class="cover">
-                    <span class="song-title">High Hopes</span>
-                    <span class="artist-name">Pink Floyd</span>
-                    <span class="duration">8:35</span>
+                    <img src="amigos/1/cancion2.jpg" alt="Portada del Tema" class="cover">
+                    <span class="song-title">Love Song</span>
+                    <span class="artist-name">The Cure</span>
+                    <span class="duration">3:29</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(2)">❤️</span>
-                        <span id="like-count2">5</span> Me gusta
+                        <span id="like-count2">15</span> Me gusta
                     </div>
 
                     <div class="add-container">
@@ -161,37 +114,37 @@
                     </div>
                 </div>
                 <div class="song">
-                    <img src="musica/img/led.jpg" alt="Portada del tema" class="cover">
-                    <span class="song-title">Stairway to Heaven</span>
-                    <span class="artist-name">Led Zeppelin</span>
-                    <span class="duration">8:01</span>
+                    <img src="amigos/1/cancion3.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Back to School</span>
+                    <span class="artist-name">Deftones</span>
+                    <span class="duration">4:18</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(3)">❤️</span>
-                        <span id="like-count3">4</span> Me gusta
+                        <span id="like-count3">9</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="musica/img/flema.jpg" alt="Y aun yo te recuerdo" class="cover">
-                    <span class="song-title">Y aun yo te recuerdo</span>
-                    <span class="artist-name">Flema</span>
-                    <span class="duration">3:21</span>
+                    <img src="amigos/1/musica/img/nirvana.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Something In The Way</span>
+                    <span class="artist-name">Nirvana</span>
+                    <span class="duration">3:05</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(4)">❤️</span>
-                        <span id="like-count4">22</span> Me gusta
+                        <span id="like-count4">12</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="musica/img/yeah.jpg" alt="Cheated Hearts" class="cover">
-                    <span class="song-title">Cheated Hearts</span>
-                    <span class="artist-name">Yeah Yeah Yeahs</span>
+                    <img src="amigos/1/musica/img/nirvana.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Smells Like Teen Spirit</span>
+                    <span class="artist-name">Nirvana</span>
                     <span class="duration">3:44</span>
 
                     <div class="like-container">
@@ -203,182 +156,182 @@
                     </div>
                 </div>
                 <div class="song">
-                    <img src="musica/img/suedehead.jpg" alt="Suedehead" class="cover">
-                    <span class="song-title">Suedehead</span>
-                    <span class="artist-name">Morrissey</span>
-                    <span class="duration">3:59</span>
+                    <img src="amigos/1/musica/lista2.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title"> Entre dos tierras</span>
+                    <span class="artist-name">Heroes del Silencio</span>
+                    <span class="duration">6:09</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(6)">❤️</span>
-                        <span id="like-count6">2</span> Me gusta
+                        <span id="like-count6">12</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/2/janis1.jpg" alt="Piece of my Heart" class="cover">
-                    <span class="song-title">Piece of my Heart</span>
-                    <span class="artist-name">Janis Joplin</span>
-                    <span class="duration">4:14</span>
+                    <img src="amigos/1/musica/lista2.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Maldito duende</span>
+                    <span class="artist-name">Heroes del Silencio</span>
+                    <span class="duration">4:13</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(7)">❤️</span>
-                        <span id="like-count7">3</span> Me gusta
+                        <span id="like-count7">13</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/2/janis2.jpg" alt="Cry Baby" class="cover">
-                    <span class="song-title">Cry Baby</span>
-                    <span class="artist-name">Janis Joplin</span>
+                    <img src="amigos/1/musica/lista2.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Oración</span>
+                    <span class="artist-name">Heroes del Silencio</span>
                     <span class="duration">3:58</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(8)">❤️</span>
-                        <span id="like-count8">2</span> Me gusta
+                        <span id="like-count8">12</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/2/janis3.jpg" alt="Maybe" class="cover">
-                    <span class="song-title">Maybe</span>
-                    <span class="artist-name">Janis Joplin</span>
+                    <img src="amigos/1/musica/img/iorio.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Hace Casi 2000 Años</span>
+                    <span class="artist-name">Iorio</span>
                     <span class="duration">3:42</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(9)">❤️</span>
-                        <span id="like-count9">4</span> Me gusta
+                        <span id="like-count9">14</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/2/janis4.jpg" alt="Kozmic Blues" class="cover">
-                    <span class="song-title">Kozmic Blues</span>
-                    <span class="artist-name">Janis Joplin</span>
-                    <span class="duration">4:24</span>
+                    <img src="amigos/1/musica/img/almafuerte.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Por Ser Yo</span>
+                    <span class="artist-name">Almafuerte</span>
+                    <span class="duration">3:46</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(10)">❤️</span>
-                        <span id="like-count10">5</span> Me gusta
+                        <span id="like-count10">15</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/3/punk1.jpg" alt="First Date" class="cover">
-                    <span class="song-title">First Date</span>
-                    <span class="artist-name">Blink 182</span>
-                    <span class="duration">3:32</span>
+                    <img src="amigos/1/musica/img/atesorando.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Justo Que Te Vas</span>
+                    <span class="artist-name">Iorio</span>
+                    <span class="duration">4:46</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(11)">❤️</span>
-                        <span id="like-count11">8</span> Me gusta
+                        <span id="like-count11">18</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/3/punk2.jpg" alt="The Kids Aren't Alrigth" class="cover">
-                    <span class="song-title">The Kids Aren't Alrigth</span>
-                    <span class="artist-name">The Offspring</span>
-                    <span class="duration">3:00</span>
+                    <img src="amigos/1/musica/img/oconnor.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title"> Yo canibal</span>
+                    <span class="artist-name">O Connor</span>
+                    <span class="duration">3:18</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(12)">❤️</span>
-                        <span id="like-count12">10</span> Me gusta
+                        <span id="like-count12">19</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/3/punk3.jpg" alt="Ya no sos igual" class="cover">
-                    <span class="song-title">Ya no sos igual</span>
-                    <span class="artist-name">2 Minutos</span>
-                    <span class="duration">3:03</span>
+                    <img src="amigos/1/musica/img/joy.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title"> Love Will Tear Us Apart</span>
+                    <span class="artist-name">Joy Division</span>
+                    <span class="duration">3:30</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(13)">❤️</span>
-                        <span id="like-count13">7</span> Me gusta
+                        <span id="like-count13">17</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/3/punk4.jpg" alt="Pet Sematary" class="cover">
-                    <span class="song-title">Pet Sematary</span>
-                    <span class="artist-name">Ramones</span>
-                    <span class="duration">3:25</span>
+                    <img src="amigos/1/musica/img/sacrilege.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Sacrilege</span>
+                    <span class="artist-name">Yeah Yeah Yeahs</span>
+                    <span class="duration">4:02</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(14)">❤️</span>
-                        <span id="like-count14">3</span> Me gusta
+                        <span id="like-count14">13</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/4/folk1.jpg" alt="Harvest Moon" class="cover">
-                    <span class="song-title">Harvest Moon</span>
-                    <span class="artist-name">Neil Young</span>
-                    <span class="duration">5:05</span>
+                    <img src="amigos/1/musica/img/maria.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Girassóis de van gogh</span>
+                    <span class="artist-name">Mari Froes</span>
+                    <span class="duration">2:30</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(15)">❤️</span>
-                        <span id="like-count15">1</span> Me gusta
+                        <span id="like-count15">11</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/4/folk2.jpg" alt="Heart of Gold" class="cover">
-                    <span class="song-title">Heart of Gold</span>
-                    <span class="artist-name">Neil Young</span>
-                    <span class="duration">3:08</span>
+                    <img src="amigos/1/musica/img/zaz.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Le long de la route</span>
+                    <span class="artist-name">Zaz</span>
+                    <span class="duration">3:26</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(16)">❤️</span>
-                        <span id="like-count16">4</span> Me gusta
+                        <span id="like-count16">14</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/4/folk3.jpg" alt="Wild Horses" class="cover">
-                    <span class="song-title">Wild Horses</span>
-                    <span class="artist-name">The Rolling Stones</span>
-                    <span class="duration">5:41</span>
+                    <img src="amigos/1/musica/img/pod.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title"> Alive </span>
+                    <span class="artist-name">P.o.d</span>
+                    <span class="duration">3:42</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(17)">❤️</span>
-                        <span id="like-count17">5</span> Me gusta
+                        <span id="like-count17">15</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/5/irish1.jpg" alt="Black Betty" class="cover">
-                    <span class="song-title">Black Betty</span>
-                    <span class="artist-name">Ram Jam</span>
-                    <span class="duration">2:25</span>
+                    <img src="amigos/1/musica/img/pixies.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Hey</span>
+                    <span class="artist-name">Pixies</span>
+                    <span class="duration">3:30</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(18)">❤️</span>
-                        <span id="like-count18">3</span> Me gusta
+                        <span id="like-count18">13</span> Me gusta
                     </div>
 
                     <div class="add-container">
@@ -386,28 +339,28 @@
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/5/irish2.jpg" alt="I'm Shipping Up To Boston" class="cover">
-                    <span class="song-title">I'm Shipping Up To Boston</span>
-                    <span class="artist-name">Dropkick Murphys</span>
-                    <span class="duration">2:45</span>
+                    <img src="amigos/1/musica/img/ELEANOR.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title"> Eleanor Rigby</span>
+                    <span class="artist-name">The Beatles</span>
+                    <span class="duration">2:11</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(19)">❤️</span>
-                        <span id="like-count19">4</span> Me gusta
+                        <span id="like-count19">14</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
                     </div>
                 </div>
                 <div class="song">
-                    <img src="img/playlist/5/irish3.jpg" alt="Portada del tema" class="cover">
-                    <span class="song-title">Rose Tattoo</span>
-                    <span class="artist-name">Dropkick Murphys</span>
-                    <span class="duration">5:27</span>
+                    <img src="amigos/1/musica/img/feel.jpg" alt="Portada del tema" class="cover">
+                    <span class="song-title">Feel Good Inc.</span>
+                    <span class="artist-name">Gorillaz</span>
+                    <span class="duration">3:42</span>
 
                     <div class="like-container">
                         <span class="like-icon" onclick="incrementLike(20)">❤️</span>
-                        <span id="like-count20">10</span> Me gusta
+                        <span id="like-count20">11</span> Me gusta
                     </div>
                     <div class="add-container">
                         <button class="add-button" onclick="addToLibrary()">Agregar</button>
