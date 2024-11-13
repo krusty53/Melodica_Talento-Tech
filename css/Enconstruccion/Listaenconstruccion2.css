@@ -4,9 +4,9 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* Establecemos el fondo de la página */
+
 body {
-    background-image: url('/img/fondoconstruccion.jpg'); 
+    background-image: url('https://raw.githubusercontent.com/krusty53/Melodica_Talento-Tech/main/img/fondoconstruccion.jpg'); 
     background-size: cover; /* Para cubrir toda la pantalla */
     background-position: center;
     display: flex;
