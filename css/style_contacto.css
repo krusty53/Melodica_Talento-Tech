@@ -26,7 +26,7 @@ body {
 }
 
 .titulo-form {
-    color: #ffff00; /* Color del texto amarillo */
+    color: #ffff00; 
     font-size: 1.8em;
     margin: 20px 0; /* Margen inferior para separar del logo */
     text-align: center;
@@ -49,12 +49,12 @@ body {
     max-width: 600px;
     margin: 10px 0; /* Reducida la distancia superior/inferior */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 
                 0 0 30px rgba(255, 255, 0, 0.6), 
                 0 0 40px rgba(255, 255, 0, 0.4), 
-                0 0 50px rgba(255, 255, 0, 0.2); /* Efecto neón */
+                0 0 50px rgba(255, 255, 0, 0.2); 
 }
 
 /* Estilo para el formulario y sus elementos */

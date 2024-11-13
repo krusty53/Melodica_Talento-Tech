@@ -36,10 +36,10 @@ h1{
     width: 100%;
     display: block;
     box-shadow: 
-        0 0 15px rgba(255, 0, 255, 0.8),  /* Sombra cercana con más intensidad */
-        0 0 30px rgba(255, 0, 255, 0.6),  /* Sombra intermedia */
-        0 0 45px rgba(255, 0, 255, 0.4),  /* Sombra más lejana para el brillo suave */
-        0 0 60px rgba(255, 0, 255, 0.2);  /* Sombra más lejana para extender el efecto */
+        0 0 15px rgba(255, 0, 255, 0.8),  
+        0 0 30px rgba(255, 0, 255, 0.6),  
+        0 0 45px rgba(255, 0, 255, 0.4),  
+        0 0 60px rgba(255, 0, 255, 0.2);  
 }
 
 .galeria{
@@ -132,8 +132,8 @@ h1{
 
 
 .image-container {
-    position: relative; /* Hacemos que el contenedor controle la posición de los elementos hijos */
-    display: inline-block; /* Asegura que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; 
+    display: inline-block; 
     background: #fff;
 }
 
@@ -155,7 +155,7 @@ h1{
 .image-container img {
     width: 60vw;
     max-height: 50vw;     /* Hace que la altura de la imagen sea proporcional al contenedor */
-    object-fit: contain;  /* Asegura que las imágenes mantengan su proporción sin recortar */
+    object-fit: contain;  
     position: relative;  /* Mantiene la imagen dentro del contenedor */
 }
 
